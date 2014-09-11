@@ -1,0 +1,9 @@
+markdown: rdiscount
+permalink: /:year/:month/:title/
+url: http://yinwer81.github.com
+author: Yinwer81
+highlighter: rouge
+markdown: kramdown
+permalink: pretty
+paginate: 24
+excerpt_separator: ""
