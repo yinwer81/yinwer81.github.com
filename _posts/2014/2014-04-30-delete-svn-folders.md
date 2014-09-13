@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Delete SVN Folders
+title: "Delete SVN Folders"
+categories: svn
 ---
 
 将svn文件夹变成普通文件夹, 即将文件夹下的.svn递归删除即可。
@@ -10,10 +11,10 @@ Windows环境, 拷贝以下脚本, 保存为deletesvn.reg, 亦可点[这里]()�
 {% highlight java %}
 Windows Registry Editor Version 5.00
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Folder\shell\DeleteSVN] 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Folder\shell\DeleteSVN]
 @="Delete SVN Folders"
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Folder\shell\DeleteSVN\command] 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Folder\shell\DeleteSVN\command]
 @="cmd.exe /c \"TITLE Removing SVN Folders in %1 && FOR /r \"%1\" %%f IN (.svn) DO RD /s /q \"%%f\" \""
 {% endhighlight %}
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "I am a programmer!"
+categories: other
 ---
 
 {% highlight java %}

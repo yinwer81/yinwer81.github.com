@@ -9,4 +9,4 @@ layout: page
 <br />
 个人邮箱: yinwer81@gmail.com<br />
 github : [https://github.com/yinwer81](https://github.com/yinwer81)<br />
-[我的简历]() | [My Resume]()
+[我的简历](/jianli) | [My Resume](/resume)
