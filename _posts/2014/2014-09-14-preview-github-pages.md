@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Preview github pages"
+categories: github-pages
 ---
 #### Windows7环境, 经测试实践无错记录。
 <br />
@@ -28,7 +29,7 @@ title: "Preview github pages"
 
 Windows7使用[git-credential-winstore](/downloads/git-credential-winstore.exe)记住密码, 需注意以下几点:
 
-* 使用https方式Clone github的Repository
+* 使用https方式clone github的repository
 * 将git-credential-winstore.exe放在与git.exe相同位置
 * 第一次提交时会弹出Git Credentials Windows安全对话框, 输入帐号和密码
 * 使用登录https://github.com的帐号和密码, 而不是SSH Key

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Blog using github pages"
+categories: github-pages
 ---
 #### Windows7环境, 经测试实践无错记录。
 <br />
