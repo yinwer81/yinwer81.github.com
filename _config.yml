@@ -2,6 +2,6 @@ markdown: rdiscount
 permalink: /:year/:month/:title/
 url: http://yinwer81.github.com
 author: Yinwer
-highlighter: pygments
+highlighter: rouge
 paginate: 24
 excerpt_separator: ""

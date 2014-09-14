@@ -3,7 +3,7 @@ layout: post
 title: "I am a programmer!"
 categories: other
 ---
-
+Talk is cheap, show me the code.
 {% highlight java %}
 package com.dunkcoder.blog;
 
