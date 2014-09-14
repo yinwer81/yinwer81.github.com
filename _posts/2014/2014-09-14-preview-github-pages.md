@@ -31,6 +31,7 @@ Windows7使用[git-credential-winstore](/downloads/git-credential-winstore.exe)�
 
 * 使用https方式clone github的repository
 * 将git-credential-winstore.exe放在与git.exe相同位置
+* 切换到命令行, 执行git-credential-winstore -i git.exe, 在弹出框中点Yes
 * 第一次提交时会弹出Git Credentials Windows安全对话框, 输入帐号和密码
 * 使用登录https://github.com的帐号和密码, 而不是SSH Key
 * 密码凭据保存在: 控制面板->用户帐号->管理您的凭据->普通凭据(git:https://github.com)
