@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "mstsc using javascript"
+title: "Mstsc using javascript"
 categories: programming
 ---
 背景：我们有一个webapp，用户在上面可以提交访问指定服务器的请求，审批时webapp会调用后台脚本在服务器上创建账号密码，并发送给用户，用户在一个时间窗口内可以通过Remote的方式访问服务器做程序维护工作。
@@ -16,7 +16,7 @@ start mstsc /v:%1:%2
 {% endhighlight %}
 调用方式：mstsc.bat ip, port, host, user, pass，经测试可行。
 
-OK，用JavaScript将脚本包装起来。Talk is cheap, show me the code.
+OK，用JavaScript将脚本包装起来如下：
 {% highlight javascript %}
 String.format = function() {
    if (arguments.length == 0)
