@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "免装客户端连接到Oracle"
+title: "免装客户端连接到Oracle205"
 categories: Oracle
 ---
-#### 免装Oracle客户端，使用sqldbx/plsql developer连接到数据库Oracle10.2.0.5。
+#### 免装Oracle客户端，使用sqldbx/plsql developer连接到数据库Oracle10205。
 <br />
 本篇所用软件版本如下，都已搜集到[这里](http://pan.baidu.com/s/1o6Nrahc)供下载。
 >* instantclient-basic-win32-10.2.0.5.zip # 助32位instantclient连接到64位oracle
