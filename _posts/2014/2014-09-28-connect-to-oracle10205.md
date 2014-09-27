@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "免装客户端连接到Oracle205"
+title: "免装客户端连接到Oracle10205"
 categories: Oracle
 ---
 #### 免装Oracle客户端，使用sqldbx/plsql developer连接到数据库Oracle10205。
