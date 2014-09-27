@@ -7,7 +7,7 @@ categories: programming
 <br />
 需求1：给一个整数数组(input)，打印其所有可能的组合(sub)，用递归来实现的代码如下：
 {% highlight java %}
-//
+//递归函数
 public static void recursion(int[] input, int pick, int start, int count, int[] sub) {
     if (count == pick) {
         System.out.print(Arrays.toString(sub));
@@ -32,9 +32,11 @@ public static void main(String[] args) {
 
     [9],[7],[2],[9, 7],[9, 2],[7, 2],[9, 7, 2]
 
-需求2: 找到一个组合(sub)，使得其整数和为原整数组(input)和的一半，同时用"+"号连接并打印该组合，使得等式成立: sum(sub) = sum(input - sub)
+需求2：找到一个组合(sub)，使得其整数和为原整数组(input)和的一半，同时用"+"号连接并打印该组合，使得等式成立: sum(sub) = sum(input - sub)。
+
+即在需求1的基础上，一旦递归到满足条件的CASE，即刻跳出递归返回结果。改进代码如下（主要看递归函数）：
 {% highlight java %}
-//
+//递归函数
 public static boolean recursion(Integer[] input, int pick, int start, int count, Integer[] sub) {
     if (count == pick) {
         if (2 * sum(sub) == sum(input)) {

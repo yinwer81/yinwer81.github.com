@@ -9,10 +9,9 @@ categories: github-pages
 
 #### 下面是详细步骤：
 <br />
-安装ruby, python并添加环境变量，解压缩devkit到c:\devkit后，命令行切换到c:\devkit目录
+安装ruby, python并添加环境变量，解压缩devkit到c:\devkit后，命令行切换到这个目录
 
-    ruby dk.rb init
-    ruby dk.rb install
+    ruby dk.rb init install
     gem sources -l
     gem sources --remove http://rubygems.org/
     gem sources -a http://ruby.taobao.org/
