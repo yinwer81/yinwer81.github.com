@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Yinwer" />
+    <meta name="viewport" content="width=device-width">
+    <title>安装Websphere7 | Yinwer</title>
+    <link rel="shortcut icon" href="/favicon.ico"/>
+	  <link rel="icon" href="/favicon.ico"/>
+
+    <link rel="stylesheet" href="/media/css/highlight.css"/>
+    <link href='/media/webfonts/ss-social.css' rel='stylesheet'/>
+    <link href='/media/webfonts/ss-standard.css' rel='stylesheet'/>
+
+    <script language="JavaScript"><!--
+        if (navigator.userAgent.match(/iPhone|iPod|Android|IEMobile/i)) {
+            document.write("<link href=\"/media/css/screen-mobil.css\" rel=\"stylesheet\">");
+        } else {
+            document.write("<link href=\"/media/css/screen.css\" rel=\"stylesheet\">");
+        }
+        // -->
+    </script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.2.min.js"></script>
+
+  </head>
+  <body>
+    <div id="container">
+      <div id="main" role="main">
+        <header>
+        <div class="buttons">
+          <a href="/" class="ss-icon" title="Go to homepage">home</a>
+          <a href="/categories" class="ss-icon" title="Category" >list</a>
+          <a href="/guestbook" class="ss-icon" title="Guest Book" >talk</a>
+          <a href="/about" class="ss-icon" title="About" >user</a>
+        </div>
+        <h1>安装Websphere7</h1>
+        </header>
+        <hr>
+        <article class="content">
+        <section class="post">
+<h4>Windows2008R2环境，经测试实践无错记录。</h4>
+
+<p><br />
+本文主要记录安装Websphere ND7和补丁27，其中所用软件版本如下，都已搜集到<a href="http://pan.baidu.com/s/1hqsv5xM">这里</a>供下载。</p>
+
+<blockquote><ul>
+<li>C1G2JML.zip</li>
+<li>7.0.0.27-WS-UPDI-WinAMD64.zip</li>
+<li>7.0.0-WS-WAS-WinX64-FP0000027.pak</li>
+<li>7.0.0-WS-WASSDK-WinX64-FP0000027.pak</li>
+</ul>
+</blockquote>
+
+<h4>下面是安装过程和一些注意事项：</h4>
+
+<p><br />
+安装Websphere ND7：</p>
+
+<ul>
+<li>解压缩C1G2JML.zip，启动launchpad.exe进行安装；</li>
+<li>建议安装两个可选软件包：
+
+<blockquote><p>管理控制台的非英语语言软件包<br />
+应用程序服务器运行时环境的非英语语言软件包</p></blockquote></li>
+<li>安装目录：C:\IBM\WebSphere\AppServer；</li>
+<li>Websphere Application Server环境，建议选择：无，待安装好WAS7和补丁后，由概要管理工具创建。</li>
+</ul>
+
+
+<p>安装UpdateInstaller：</p>
+
+<ul>
+<li>解压缩7.0.0.27-WS-UPDI-WinAMD64.zip, 启动UpdateInstaller\install.exe进行安装；</li>
+<li>安装目录: C:\IBM\WebSphere\UpdateInstaller</li>
+</ul>
+
+
+<p>安装升级补丁：</p>
+
+<ul>
+<li>输入要更新的产品的安装位置：C:\IBM\WebSphere\AppServer；</li>
+<li>安装维护软件包，拷贝到C:\IBM\WebSphere\UpdateInstaller\maintenance目录：
+
+<blockquote><p>7.0.0-WS-WAS-WinX64-FP0000027.pak<br />
+7.0.0-WS-WASSDK-WinX64-FP0000027.pak</p></blockquote></li>
+</ul>
+
+
+<p>使用概要管理工具(Profile Management Tool)创建应用程序服务器AppSrv01：</p>
+
+<ul>
+<li>WASND7版本支持五种特定类型的环境:
+
+<blockquote><p>单元(Deployment Manager和联合应用程序服务器)<br />
+管理<br />
+应用程序服务器<br />
+定制概要文件<br />
+安全代理(仅用于配置)</p></blockquote></li>
+<li>创建应用程序服务器AppSrv01
+
+<blockquote><p>概要管理工具->应用程序服务器->典型概要文件->启用管理安全性->...</p></blockquote></li>
+</ul>
+
+
+<p>安装验证|启动服务器|管理控制台</p>
+
+<ul>
+<li>使用【启用管理安全性】处设置的账号和密码，登陆集成方案控制台
+
+<blockquote><p>链接大约是：https://${DOMAIN}:9043/ibm/console/logon.jsp)</p></blockquote></li>
+<li>验证Websphere Application Server套件版本：7.0.0.27</li>
+</ul>
+
+
+<p>以上。您有任何问题或建议，请给我写<a href="mailto:yinwer81@gmail.com">邮件</a>。</p>
+
+</section>
+<section class="meta">
+<hr/>
+<span class="author">
+  <a href="/about">Yinwer</a>
+</span>
+<span class="time">
+  /
+  <time datetime="2014-09-27">2014-09-27</time>
+</span>
+<br />
+<span class="license">
+  Published under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">(CC) BY-NC-SA</a>
+</span>
+</section>
+<section class="comment">
+
+<div class="bdsharebuttonbox"><a title="分享到新浪微博" class="bds_tsina" data-cmd="tsina" href="#"></a><a title="分享到微信" class="bds_weixin" data-cmd="weixin" href="#"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+</section>
+<script type="text/javascript">
+$(function(){
+  $(document).keydown(function(e) {
+    var url = false;
+        if (e.which == 37 || e.which == 74) {  // Left arrow and J
+            
+        url = 'http://yinwer81.github.com/2014/09/springmvc-excel-export/';
+        
+        }
+        else if (e.which == 39 || e.which == 75) {  // Right arrow and K
+            
+        url = 'http://yinwer81.github.com/2014/09/setup-oracle10205/';
+        
+        }
+        if (url) {
+            window.location = url;
+        }
+  });
+})
+
+</script>
+
+<style type="text/css">
+/*resize the big pic*/
+div.resized_image p {
+  margin: 2px;
+  margin-top: 0;
+  font-size: 8px;
+  /* Awesome icon from here: http://www.famfamfam.com/lab/icons/silk/ */
+  background: url(http://i242.photobucket.com/albums/ff244/9861_omikron/error.png) no-repeat;
+  padding-left: 20px;
+  color: #333;
+}
+</style>
+<script type="text/javascript">
+//resize the big pic
+$(window).load(function() {
+  (
+    function(maxht, maxwt, minht, minwt) {
+      var imgs = document.getElementsByTagName('img');
+      // Image resizing function
+      var resize_image = function(img, newht, newwt) {
+        img.height = newht;
+        img.width  = newwt;
+        $(img).wrap('<table><tr><td class="tborder"><div class="resized_image"><a href="' + img.src + '" target="_blank"></a></div></td></tr></table>');
+        $(img).parent().before('<p>NOTE: This image was resized. To view it full-size, click on the image.</p>');
+        //$(img).parent().after('<p style="text-align:right;background:none;margin:0;padding-right:3px">Image resizing script by <a href="http://aetus.net/217/programming/automatically-resize-large-images-with-javascript/">Aetus Designs</a>.</p>');
+      };
+
+      for (var i = 0; i < imgs.length; i++) {
+        // Set a variable for the current image to make the code make more sense.
+        var img = imgs[i];
+        if (img.height > maxht || img.width > maxwt) {
+          // Use Ratios to constraint proportions.
+          var old_ratio = img.height / img.width;
+          var min_ratio = minht / minwt;
+          // If it can scale perfectly.
+          if (old_ratio === min_ratio) {
+            resize_image(img, minht, minwt);
+          }
+          // We need to do some magic now.
+          else {
+            var newdim = [img.height, img.width];
+            // Sort out the height first.
+            newdim[0] = minht;
+            // The logic behind this is that if ratio = ht / wt, then wt = ht / ratio.
+            newdim[1] = newdim[0] / old_ratio;
+            // Do we still have to sort out the width?
+            if (newdim[1] > maxwt) {
+              // Just do what we did with the height
+              newdim[1] = minwt;
+              newdim[0] = newdim[1] * old_ratio;
+            }
+            // So yeah, resize the image
+            resize_image(img, newdim[0], newdim[1]);
+          }
+        }
+      }
+    }
+  )(780, 780, 780, 780);
+});
+</script>
+        </article>
+      </div>
+
+    <footer>
+        <p><small>Powered by Jekyll | Free hosted at Github | Copyright 2014 - 2014 by <a href="/about/">Yinwer</a> | Thanks to <a href="http://blog.sevenche.com">Jim</a> for this theme.</small></p>
+    </footer>
+
+    </div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-54720609-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

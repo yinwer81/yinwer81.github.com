@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "I am a programmer!"
-categories: other
+categories: programming
 ---
 Talk is cheap, show me the code.
 {% highlight java %}

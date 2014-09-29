@@ -7,9 +7,9 @@ categories: github-pages
 <br />
 本篇主要讲怎样在本地预览github pages，接上篇[blog using github pages](/2014/09/blog-using-github-pages/)
 
-#### 下面是详细步骤：
+#### 下面是详细过程：
 <br />
-安装ruby, python并添加环境变量，解压缩devkit到c:\devkit后，命令行切换到这个目录
+安装ruby, python并添加环境变量，解压缩devkit到c:\devkit后，命令行切换到这个目录，执行以下命令：
 
     ruby dk.rb init install
     gem sources -l
@@ -20,9 +20,9 @@ categories: github-pages
     gem install github-pages --no-ri --no-rdoc
     gem update --no-ri --no-rdoc
 
-涉及显示中文等显示问题，需设置LANG和LC_ALL两个环境变量，其值均为zh_CN.UTF-8
+涉及显示中文等显示问题，需设置LANG和LC_ALL两个环境变量，其值均为zh_CN.UTF-8。
 
-在yinwer81.gitub.com目录中执行：jekyll serve --watch，通过http://localhost:4000访问预览
+在yinwer81.gitub.com目录中执行：jekyll serve --watch，通过http://localhost:4000访问预览。
 
     jekyll serve --watch
 
@@ -34,16 +34,15 @@ Windows7使用[git-credential-winstore](/downloads/git-credential-winstore.exe)�
 * 第一次提交时会弹出Git Credentials Windows安全对话框，输入帐号和密码
 * 使用登录https://github.com的帐号和密码，而不是SSH Key
 * 密码凭据保存在：控制面板->用户帐号->管理您的凭据->普通凭据(git:https://github.com)
+* 以后再提交时，已无需输入账号和密码。
 
 Mac OS X使用~/.netrc记住密码，按以下方式操作：
 
     vi ~/.netrc
-    machine github.com
-    login your_account
-    password your_password
-    :wq<保存退出>
-
-以后再提交时，已无需输入账号和密码。
+        machine github.com
+        login your_account
+        password your_password
+    :wq
 
 以上。您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
 

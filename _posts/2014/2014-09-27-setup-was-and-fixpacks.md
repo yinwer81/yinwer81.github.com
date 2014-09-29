@@ -5,13 +5,13 @@ categories: websphere
 ---
 #### Windows2008R2环境，经测试实践无错记录。
 <br />
-本文主要记录安装Websphere ND7和补丁27，其中所用软件版本如下，都已搜集到[这里](http://pan.baidu.com/s/1o6Nrahc)供下载。
+本文主要记录安装Websphere ND7和补丁27，其中所用软件版本如下，都已搜集到[这里](http://pan.baidu.com/s/1hqsv5xM)供下载。
 >* C1G2JML.zip
 >* 7.0.0.27-WS-UPDI-WinAMD64.zip
 >* 7.0.0-WS-WAS-WinX64-FP0000027.pak
 >* 7.0.0-WS-WASSDK-WinX64-FP0000027.pak
 
-#### 下面是安装步骤及一些注意事项：
+#### 下面是安装过程和一些注意事项：
 <br />
 安装Websphere ND7：
 
@@ -20,7 +20,7 @@ categories: websphere
 > 管理控制台的非英语语言软件包<br />
 > 应用程序服务器运行时环境的非英语语言软件包
 * 安装目录：C:\IBM\WebSphere\AppServer；
-* Websphere Application Server环境，建议选择：无，待安装好WAS7和补丁后，由概要管理工具统一创建。
+* Websphere Application Server环境，建议选择：无，待安装好WAS7和补丁后，由概要管理工具创建。
 
 安装UpdateInstaller：
 

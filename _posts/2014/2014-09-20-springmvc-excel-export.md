@@ -48,7 +48,7 @@ public View export() {
 
 导入相关library包，访问http://${DOMAIN}/${ApplicationContext}/export.xls即可产生excel文件。
 
-Spring 3.2.6.RELEASE和POI 3.9环境测试通过。中文文件名在各浏览器兼容问题不在此文范围。
+Spring 3.2.6.RELEASE和POI 3.9环境测试通过，中文文件名在各浏览器兼容问题不在此文范围。
 
 
 以上。您有任何问题或建议, 请给我写[邮件](mailto:yinwer81@gmail.com)。
