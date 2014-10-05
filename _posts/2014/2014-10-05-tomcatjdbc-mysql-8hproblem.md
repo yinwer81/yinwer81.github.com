@@ -42,6 +42,6 @@ categories: programming
 <property name="testOnBorrow" value="true" />
 {% endhighlight %}
 
-记录在此，供下次或遇到此问题的朋友查询。
+记录在此，供下次或遇到此问题的朋友查询，其他连接池也有类似的处理方法。
 
 以上。您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
