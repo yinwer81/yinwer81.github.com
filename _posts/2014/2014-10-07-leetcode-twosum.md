@@ -16,7 +16,7 @@ twoSum问题官方描述在[这里](https://oj.leetcode.com/problems/two-sum/)�
 >* 数组中数字重复只考虑下标靠前的
 >* 找不到两个整数和为target时，返回两个下表都是0
 
-下面是OJ通过的代码：
+下面是OJ Accepted的代码：
 {% highlight java %}
 public static int[] twoSum(final int[] input, final long target) {
 	int[] result = new int[2];

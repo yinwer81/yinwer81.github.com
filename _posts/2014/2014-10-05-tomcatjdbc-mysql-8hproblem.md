@@ -4,14 +4,14 @@ title: "JdbcPool和mysql的8小时问题"
 categories: programming
 ---
 
-刚好交付一个业务自助系统，运行环境是SpringMVC, JPA(Hibernate), MySql(Tomcat jdbcPool)。
+刚刚交付一个业务自助系统，运行环境是SpringMVC, JPA(Hibernate), MySql(Tomcat jdbcPool)。
 
 每天凌晨0点到早上9点是没人访问的，于是每天上班均收到通知：系统报错，不能登录。经查日志，系统报CommunicationsException，大致如下：
 
     org.hibernate.SessionException: Session is closed!
-    Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+    Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure ...
 
-祭出谷歌大神一搜索，mysql的8小时问题，官方说明在[这里](http://dev.mysql.com/doc/refman/5.0/en/server-system-variables.html#sysvar_wait_timeout)，大致意思是：mysql在默认配置下（28800秒）会主动断开闲置的连接。
+祭出谷歌大神一搜索才知道是mysql的8小时问题，官方说明在[这里](http://dev.mysql.com/doc/refman/5.0/en/server-system-variables.html#sysvar_wait_timeout)，大致意思是：mysql在默认配置下（28800秒）会主动断开闲置的连接。
 
 找到了RootCause，问题很好解决：加一个类似心跳机制即可，在28800秒问题发生之前，定时和mysql心跳一下，剩下的事就是查Tomcat JdbcPool的文档了。
 
