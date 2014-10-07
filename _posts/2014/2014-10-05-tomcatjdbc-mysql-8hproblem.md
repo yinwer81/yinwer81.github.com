@@ -32,7 +32,7 @@ categories: programming
 </bean>
 {% endhighlight %}
 
-经测试，只需加入以下配置项，以下时间配置项单位均为毫秒，可根据不同情况调整。
+经测试，只需多添加以下配置项即可解决8小时问题，时间配置项单位均为毫秒，可根据不同情况调整。
 {% highlight xml %}
 <property name="timeBetweenEvictionRunsMillis" value="900000" />
 <property name="minEvictableIdleTimeMillis" value="1800000" />
