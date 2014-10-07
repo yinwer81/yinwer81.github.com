@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Leetcode twoSum问题"
-categories: programming, leetcode
+categories: programming leetcode
 ---
 
 本篇记录leetcode的twoSum问题。
