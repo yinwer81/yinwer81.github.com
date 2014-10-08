@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Leetcode twoSum问题"
+title: "TwoSum问题 leetcode"
 categories: programming leetcode
 ---
 
