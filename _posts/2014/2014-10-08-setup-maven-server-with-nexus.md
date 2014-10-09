@@ -47,7 +47,7 @@ Nexus的一些操作：
 
 >* 手工加入第三方jar包：View/Repositories->Repositories->3rdParty->AntifactUpload->GAVParameters
 
-接下来，在settings.xml中配置，使得Nexus成为私服：
+接下来，在settings.xml中配置，使得Nexus成为私服(拷贝后仅修改Nexus指向url就行)：
 {% highlight xml %}
 <profiles>
 	<profile>
