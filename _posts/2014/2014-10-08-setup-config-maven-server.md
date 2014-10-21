@@ -4,21 +4,21 @@ title: "使用Nexus搭建maven私服"
 categories: maven
 ---
 
-#### Windows2008R2环境，使用Nexus搭建Maven私服，经测试实践无错记录。
+#### 本篇记录在Windows2008R2环境下，使用Nexus搭建和配置Maven私服。
 <br />
-其中所用软件和版本如下，都已搜集到[这里](http://pan.baidu.com/s/1sjz5aW1)供下载。
+所用软件和版本如下，都已搜集到[这里](http://pan.baidu.com/s/1sjz5aW1)。
 >* apache-maven-3.2.3-bin.zip
 >* nexus-2.10.0-02-bundle.zip
 
 首先，下载并解压缩maven到C:\apache-maven-3.2.3，配置环境变量MAVEN_HOME=C:\apache-maven-3.2.3并添加到PATH，mvn -v验证maven是否可以正确执行。
 
-下载并解压缩nexus到C:\nexus-2.10.0-02-bundle，配置环境变量NEXUS_HOME=C:\nexus-2.10.0-02-bundle\nexus-2.10.0-02并添加到PATH，NEXUS的目录结构大致如下所示：
+下载并解压缩nexus到C:\nexus-2.10.0-02-bundle，配置环境变量NEXUS_HOME=C:\nexus-2.10.0-02-bundle\nexus-2.10.0-02并添加到PATH，NEXUS的目录结构如下所示：
 
 	C:\nexus-2.10.0-02-bundle
 		|- nexus-2.10.0-02
 		|- sonatype-work
 
-接下来配置Nexus：
+接下来，配置和启动Nexus：
 >* 如果当前没有设置JAVA_HOME环境变量，则需指定java所在目录，还是配个JAVA_HOME吧
 
 	%NEXUS_HOME%\bin\jsw\conf\wrapper.conf: wrapper.java.command=java
@@ -49,34 +49,6 @@ Nexus的一些操作：
 
 接下来，在settings.xml中配置，使得Nexus成为私服(拷贝后仅修改Nexus指向url就行)：
 {% highlight xml %}
-<profiles>
-	<profile>
-    	<id>nexus</id>
-		<repositories>
-      		<repository>
-        		<id>nexus</id>
-        		<name>nexus repos</name>
-        		<url>http://nexus</url><!-- mirrorOf * url已失去意义 -->
-        		<releases><enabled>true</enabled></releases>
-        		<snapshots><enabled>true</enabled></snapshots>
-			</repository>
-		</repositories>
-		<pluginRepositories>
-        	<pluginRepository>
-				<id>nexus</id>
-				<name>nexus plugin repos</name>
-				<url>http://nexus</url><!-- mirrorOf * url已失去意义 -->
-				<releases><enabled>true</enabled></releases>
-				<snapshots><enabled>true</enabled></snapshots>
-			</pluginRepository>
-		</pluginRepositories>
-	</profile>
-</profiles>
-<!-- 使profile:nexus有效  -->
-<activeProfiles>
-	<activeProfile>nexus</activeProfile>
-</activeProfiles>
-<!-- 使mirror:nexus镜像所有已生效profile  -->
 <mirrors>
 	<mirror>
     	<id>nexus</id>
@@ -86,9 +58,7 @@ Nexus的一些操作：
 </mirrors>
 {% endhighlight %}
 
-验证Nexus私服代理是否成功：
-
-	执行以下命令, 查看downloading和downloaded地址是否来自http://IP:8081/nexus/*，如果是，则代理成功。
+验证Nexus私服代理是否成功：查看下载artifacts的地址是否来自镜像URL地址，如果是，则代理成功。
 
 生成maven java项目：
 
@@ -98,4 +68,6 @@ Nexus的一些操作：
 
 	mvn archetype:create -DgroupId=com.test -DartifactId=test-webapp -DarchetypeArtifactId=maven-archetype-webapp
 
-以上。您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
+以上。
+
+您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。

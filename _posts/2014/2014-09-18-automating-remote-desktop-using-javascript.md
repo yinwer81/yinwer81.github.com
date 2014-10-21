@@ -1,13 +1,19 @@
 ---
 layout: post
-title: "Mstsc using javascript"
+title: "Automating remote desktop using javascript"
 categories: programming
 ---
-背景：我们有一个webapp，用户在上面可以提交访问指定服务器的请求，审批时webapp会调用后台脚本在服务器上创建账号密码，并发送给用户，用户在一个时间窗口内可以通过Remote的方式访问服务器做程序维护工作。
+#### 背景：
+<br />
+我们有一个webapp，用户在上面可以提交访问指定服务器的请求，审批时webapp会调用后台脚本在服务器上创建账号密码，并发送给用户，用户在一个时间窗口内可以通过Remote的方式访问服务器做程序维护工作。
 
-原做法：用户手工方式远程登录，缺点是麻烦易错，用户可以接受但抱怨不断，用户体验不好。
+#### 原做法：
+<br />
+用户手工方式远程登录，缺点是麻烦易错，用户可以接受但抱怨不断，用户体验不好。
 
-新做法：根据服务器IP地址和账号密码生成链接，用户点击链接自动Remote并登陆到服务器，缺点是涉及ActiveX，故仅支持IE浏览器，但避免了用户手工的麻烦和出错，用户点赞！
+#### 新做法：
+<br />
+根据服务器IP地址和账号密码生成链接，用户点击链接自动Remote并登陆到服务器，缺点是涉及ActiveX，故仅支持IE浏览器，但避免了用户手工的麻烦和出错，用户点赞！
 
 技术方案是将下面代码包装成mstsc.bat
 {% highlight bash %}
@@ -51,5 +57,7 @@ function lunchRdp(ip, port, host, user, pass) {
 };
 {% endhighlight %}
 
-以上，IE8测试通过。您有任何问题或建议, 请给我写[邮件](mailto:yinwer81@gmail.com)。
+以上，IE8测试通过。
+
+您有任何问题或建议, 请给我写[邮件](mailto:yinwer81@gmail.com)。
 

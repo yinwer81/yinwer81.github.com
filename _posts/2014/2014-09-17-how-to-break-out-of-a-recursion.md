@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Break out of a resursion"
+title: "How to break out of a resursion"
 categories: programming
 ---
-#### 类比：Java中，满足一定条件时结束循环可用break，那怎样结束递归呢？本文举例说明。
+#### Java中，我们用break跳出循环，那跳出递归怎么办？举例如下：
 <br />
-需求1：给一个整数数组(input)，打印其所有可能的组合(sub)，用递归来实现的代码如下：
+需求1：给定一整数数组input，打印其所有可能的组合sub，用递归来实现的代码如下：
 {% highlight java %}
 //递归函数
 public static void recursion(int[] input, int pick, int start, int count, int[] sub) {
@@ -28,13 +28,13 @@ public static void main(String[] args) {
     }
 }
 {% endhighlight %}
-打印结果共7个组合：
+打印结果如下，共7个组合：
 
     [9],[7],[2],[9, 7],[9, 2],[7, 2],[9, 7, 2]
 
-需求2：找到一个组合(sub)，使得其整数和为原整数组(input)和的一半，同时用"+"号连接并打印该组合，使得等式成立: sum(sub) = sum(input - sub)。
+需求2：找出是否存在一组合sub，使得等式2 * sum(sub) = sum(input)成立，打印该组合（用"+"号连接）。
 
-即在需求1的基础上，一旦递归到满足条件的CASE，即刻跳出递归返回结果。改进代码如下（主要看递归函数）：
+即在需求1的基础上，一旦递归到满足条件的组合，即返回结果同时结束递归。改进代码如下：
 {% highlight java %}
 //递归函数
 public static boolean recursion(Integer[] input, int pick, int start, int count, Integer[] sub) {
@@ -104,7 +104,9 @@ public static void main(String[] args) {
 
     9 = 7+2
 
-#### 总结：给递归函数定义返回值，并在递归过程中判断该返回值可适时结束递归。此技巧适用所有语言。
+#### 总结：通过给递归函数定义返回值，在递归过程中判断该返回值可结束递归。
 <br />
-以上。您有任何问题或建议, 请给我写[邮件](mailto:yinwer81@gmail.com)。
+以上。
+
+您有任何问题或建议, 请给我写[邮件](mailto:yinwer81@gmail.com)。
 

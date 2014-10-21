@@ -15,7 +15,7 @@ categories: programming
 
 找到了RootCause，问题很好解决：加一个类似心跳机制即可，在28800秒问题发生之前，定时和mysql心跳一下，剩下的事就是查Tomcat JdbcPool的文档了。
 
-当前系统的JdbcPool配置为：
+经测试，以下JdbcPool配置可正常工作，时间单位均为毫秒，可根据不同情况调整：
 {% highlight xml %}
 <bean id="dataSource" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
     <!-- Connection Info -->
@@ -29,19 +29,19 @@ categories: programming
     <property name="maxIdle" value="${jdbc.pool.maxIdle}" />
     <property name="minIdle" value="0" />
     <property name="defaultAutoCommit" value="false" />
+
+    <property name="timeBetweenEvictionRunsMillis" value="900000" />
+    <property name="minEvictableIdleTimeMillis" value="1800000" />
+    <property name="validationQuery" value="SELECT 1" />
+    <property name="validationInterval" value="600000" />
+    <property name="testWhileIdle" value="true" />
+    <property name="testOnBorrow" value="true" />
+
 </bean>
 {% endhighlight %}
 
-经测试，只需多添加以下配置项即可解决8小时问题，时间配置项单位均为毫秒，可根据不同情况调整。
-{% highlight xml %}
-<property name="timeBetweenEvictionRunsMillis" value="900000" />
-<property name="minEvictableIdleTimeMillis" value="1800000" />
-<property name="validationQuery" value="SELECT 1" />
-<property name="validationInterval" value="600000" />
-<property name="testWhileIdle" value="true" />
-<property name="testOnBorrow" value="true" />
-{% endhighlight %}
+记录在此，其他连接池也有类似的处理方法。
 
-记录在此，供下次或遇到此问题的朋友查询，其他连接池也有类似的处理方法。
+以上。
 
-以上。您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
+您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
