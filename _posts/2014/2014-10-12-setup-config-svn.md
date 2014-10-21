@@ -62,7 +62,7 @@ Linux下的安装稍显麻烦，安装Java运行环境并配置环境变量，�
 
 >* 修改后台CSVN端口3343，SVN服务端口和协议等
 
-    修改后台CSVN 3343端口可以参考csvn-wrapper.conf，SVN服务端口和协议可以在`菜单：管理->Server Settings`配置。
+    修改后台3343端口可以参考csvn-wrapper.conf，SVN服务端口和协议可以在`菜单：管理->Server Settings`配置。
 
 >* 使用HTTPS方式提供SVN服务
 
