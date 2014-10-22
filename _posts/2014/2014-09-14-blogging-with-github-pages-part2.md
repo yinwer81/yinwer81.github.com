@@ -7,9 +7,11 @@ categories: github-pages
 <br />
 #### 下面是详细过程：
 <br />
-首先，安装ruby, python并配置环境变量，解压缩devkit并命令行切换到此目录c:\devkit后，执行下面命令，初始化本地github-pages环境：
-
-    ruby dk.rb init install
+首先，安装ruby, python并配置环境变量，解压缩devkit，启动msys命令行执行下面命令，初始化本地github-pages环境：
+    
+    cd /c/devkit/
+    ruby dk.rb init
+    ruby dk.rb install
     gem sources -l
     gem sources --remove http://rubygems.org/
     gem sources -a http://ruby.taobao.org/
