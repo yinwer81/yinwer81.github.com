@@ -3,7 +3,7 @@ layout: post
 title: "Blogging with github pages part2"
 categories: github-pages
 ---
-#### 本篇记录在Windows7环境下本地预览github pages，接上篇[blogging with github pages part1](/2014/09/blogging-with-github-pages-part1/)。
+#### 本篇记录在Windows7 64bits环境下本地预览github pages，接上篇[blogging with github pages part1](/2014/09/blogging-with-github-pages-part1/)。
 <br />
 #### 下面是详细过程：
 <br />
@@ -28,10 +28,10 @@ categories: github-pages
 
 注意：涉及显示中文等显示问题，需设置LANG和LC_ALL两个环境变量，其值均为zh_CN.UTF-8。
 
-然后，在yinwer81.gitub.com目录中执行下面命令后，通过http://localhost:4000访问预览。
+然后，在yinwer81.gitub.com目录中执行下面命令后(没有任何错误消息)，通过http://localhost:4000访问预览。
 
     jekyll serve --watch
-到这里，
+
 
 #### 记住密码：
 <br />

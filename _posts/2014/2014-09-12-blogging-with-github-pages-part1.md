@@ -3,13 +3,13 @@ layout: post
 title: "Blogging with github pages part1"
 categories: github-pages
 ---
-#### 本篇记录在Windows7环境下连接Github，Clone和提交Github-Pages博客仓库。
+#### 本篇记录在Windows7 64bits环境下连接Github，Clone和提交Github-Pages博客仓库。
 <br />
 所用软件和版本如下，都已搜集到[这里](http://pan.baidu.com/s/1o6Nrahc)。
 >* msysGit-fullinstall-1.8.1.2-preview20130201.exe
->* rubyinstaller-1.9.3-p392.exe
+>* rubyinstaller-2.0.0-p576-x64.exe
 >* python-2.7.3.msi
->* DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe
+>* DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe
 >* git-credential-winstore.exe
 
 #### 下面以本博客为例：
