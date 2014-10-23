@@ -7,24 +7,31 @@ categories: github-pages
 <br />
 #### 下面是详细过程：
 <br />
-首先，安装ruby, python并配置环境变量，解压缩devkit，启动msys命令行执行下面命令，初始化本地github-pages环境：
+首先，安装ruby到C:/Ruby200-x64(全部勾选), python到C:/Python27并配置环境变量，解压缩devkit，启动msys命令行执行下面命令，初始化本地github-pages环境：
     
     cd /c/devkit/
     ruby dk.rb init
+按照提示，编辑/c/devkit/config.yml，添加ruby的安装目录`- C:/Ruby200-x64`，接着往下：
+
     ruby dk.rb install
     gem sources -l
     gem sources --remove http://rubygems.org/
     gem sources -a http://ruby.taobao.org/
 
+    # 卸载所有gem包，default gem包卸载不掉出错不管
     gem list | cut -d" " -f1 | xargs gem uninstall -aIx
     gem install github-pages --no-ri --no-rdoc
     gem update --no-ri --no-rdoc
+
+    # 安装wdm
+    gem install wdm --no-ri --no-rdoc
 
 注意：涉及显示中文等显示问题，需设置LANG和LC_ALL两个环境变量，其值均为zh_CN.UTF-8。
 
 然后，在yinwer81.gitub.com目录中执行下面命令后，通过http://localhost:4000访问预览。
 
     jekyll serve --watch
+到这里，
 
 #### 记住密码：
 <br />
