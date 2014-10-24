@@ -30,8 +30,11 @@ iTerm2中切换到`yinwer81.github.com`目录，执行以下命令初始化githu
     Yinwer$ gem sources -a http://ruby.taobao.org/
 
     # 安装github-pages环境所需gem包
-    Yinwer$ gem install github-pages --no-ri --no-rdoc
-    Yinwer$ gem update --no-ri --no-rdoc
+    Yinwer$ sudo gem install github-pages --no-ri --no-rdoc
+    Yinwer$ sudo gem update --no-ri --no-rdoc
+
+    # 安装rouge
+    Yinwer$ sudo gem install rouge --no-ri --no-rdoc
 
 按照以上步骤安装github-pages本地预览环境，基本不会有问题，如下所示：
     
