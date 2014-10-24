@@ -34,7 +34,7 @@ categories: github-pages
 
     jekyll serve --watch
 
-下面是执行·jekyll serve --watch·命令启动Jekyll服务器预览时几个常见的错误及解决方法：
+下面是执行`jekyll serve --watch`命令启动Jekyll服务器预览时几个常见的错误及解决方法：
 >* 报大概下面错误时，修改_config.xml，将highlighter设置为`rouge/pygments`，立马没问题了。
 
     c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/posix-spawn-0.3.9/lib/posix/spawn.rb:164: 
