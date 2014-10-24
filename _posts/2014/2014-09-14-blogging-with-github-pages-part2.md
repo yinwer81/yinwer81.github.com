@@ -15,7 +15,10 @@ categories: github-pages
 
     ruby dk.rb install
     gem sources -l
+
+    # 将原Gem源拿掉
     gem sources --remove http://rubygems.org/
+    # 换成taobao的Gem源镜像
     gem sources -a http://ruby.taobao.org/
 
     # 卸载所有gem包，default gem包卸载不掉出错不管
@@ -35,7 +38,7 @@ categories: github-pages
     jekyll serve --watch
 
 下面是执行`jekyll serve --watch`命令启动Jekyll服务器预览时几个常见的错误及解决方法：
->* 报大概下面错误时，修改_config.xml，将highlighter设置为`rouge/pygments`，立马没问题了。
+>* 报大概下面错误时，修改_config.xml，将highlighter设置为`rouge`，不报错了，代码高亮也OK。
 
     c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/posix-spawn-0.3.9/lib/posix/spawn.rb:164: 
     warning: cannot close fd before spawn
@@ -73,14 +76,6 @@ Windows7使用git-credential-winstore记住密码：
 * 以后再提交时，已无需输入账号和密码
 * 使用https方式clone github的仓库
 * 密码凭据保存在：控制面板->用户帐号->管理您的凭据->普通凭据(git:https://github.com)
-
-Mac OS X使用~/.netrc记住密码：
-
-    vi ~/.netrc
-        machine github.com
-        login your_account
-        password your_password
-    :wq
 
 以上。
 
