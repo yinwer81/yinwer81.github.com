@@ -1,5 +1,5 @@
 markdown: rdiscount
-permalink: /:year/:month/:title/
+permalink: /:year:month:day/:title
 url: http://yinwer81.github.com
 author: Yinwer
 highlighter: pygments

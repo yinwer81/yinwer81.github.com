@@ -3,7 +3,7 @@ layout: post
 title: "Blogging with github pages part2"
 categories: github-pages
 ---
-#### 本篇记录在Windows7 64bits环境下本地预览github pages，接上篇[blogging with github pages part1](/2014/09/blogging-with-github-pages-part1/)。
+#### 本篇记录在Windows7 64bits环境下本地预览github pages，接上篇[blogging with github pages part1](/20140912/blogging-with-github-pages-part1/)。
 <br />
 #### 下面是详细过程：
 <br />
