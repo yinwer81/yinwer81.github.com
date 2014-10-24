@@ -33,7 +33,7 @@ iTerm2中切换到`yinwer81.github.com`目录，执行以下命令初始化githu
     Yinwer$ sudo gem install github-pages --no-ri --no-rdoc
     Yinwer$ sudo gem update --no-ri --no-rdoc
 
-    # 安装rouge
+    # 安装rouge，如果使用pygments，就不用安装
     Yinwer$ sudo gem install rouge --no-ri --no-rdoc
 
 按照以上步骤安装github-pages本地预览环境，基本不会有问题，如下所示：
