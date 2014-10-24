@@ -20,6 +20,8 @@ categories: github-pages
 
     # 卸载所有gem包，default gem包卸载不掉出错不管
     gem list | cut -d" " -f1 | xargs gem uninstall -aIx
+
+    # 安装github-pages环境所需gem包
     gem install github-pages --no-ri --no-rdoc
     gem update --no-ri --no-rdoc
 
@@ -32,6 +34,33 @@ categories: github-pages
 
     jekyll serve --watch
 
+下面是执行·jekyll serve --watch·命令启动Jekyll服务器预览时几个常见的错误及解决方法：
+>* 报大概下面错误时，修改_config.xml，将highlighter设置为`rouge/pygments`，立马没问题了。
+
+    c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/posix-spawn-0.3.9/lib/posix/spawn.rb:164: 
+    warning: cannot close fd before spawn
+    'which' 不是内部或外部命令，也不是可运行的程序或批处理文件。
+
+>* 报大概下面错误时，执行`gem install wdm --no-ri --no-rdoc`安装wdm
+
+    Please add the following to your Gemfile to avoid polling for changes:
+      require 'rbconfig'
+      if RbConfig::CONFIG['target_os'] =~ /mswin|mingw|cygwin/i
+          gem 'wdm', '>= 0.1.0'
+      end
+按照以上步骤安装github-pages本地预览环境，基本不会有问题，如下所示：
+    
+    $ jekyll server --watch
+
+    Configuration file: C:/msysgit/yinwer81.github.com/_config.yml
+                Source: C:/msysgit/yinwer81.github.com
+           Destination: C:/msysgit/yinwer81.github.com/_site
+          Generating...
+                        done.
+     Auto-regeneration: enabled for 'C:/msysgit/yinwer81.github.com'
+    Configuration file: C:/msysgit/yinwer81.github.com/_config.yml
+        Server address: http://0.0.0.0:4000/
+      Server running... press ctrl-c to stop.
 
 #### 记住密码：
 <br />
