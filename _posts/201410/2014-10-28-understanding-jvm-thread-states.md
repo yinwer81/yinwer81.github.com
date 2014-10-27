@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Java Thread状态及转换"
+title: "JVM线程状态及转换"
 categories: multithread
 ---
 

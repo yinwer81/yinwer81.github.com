@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "JdbcPool和mysql的8小时问题"
+title: "TomcatJdbcPool避开mysql的8小时问题"
 categories: programming
 ---
 

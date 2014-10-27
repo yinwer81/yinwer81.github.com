@@ -82,6 +82,8 @@ categories: programming
     --> 
 <Engine name="Catalina" defaultHost="localhost" jvmRoute="tomcat1">
 
-以上，本文是参考[Tomcat Clustering系列5篇](http://www.ramkitech.com/2012/10/tomcat-clustering-series-simple-load.html)的测试和实践，有梯子的朋友看完整版本会更明白。
+**我们要注意的是：**
+
+以上，本文是参考[Tomcat Clustering系列5篇](http://www.ramkitech.com/2012/10/tomcat-clustering-series-simple-load.html)的测试和实践，有梯子的朋友看完整英文版本会更明白。
 
 您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。

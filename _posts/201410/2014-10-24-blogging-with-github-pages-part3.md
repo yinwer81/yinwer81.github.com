@@ -3,7 +3,7 @@ layout: post
 title: "Blogging with github pages part3"
 categories: github-pages
 ---
-#### 本篇记录在Mac Yosemite 64bits环境下本地预览github pages。
+#### 本篇记录在Mac Yosemite 64bits环境下本地预览github -pages，接上篇[blogging with github pages part2](/20140914/blogging-with-github-pages-part2/)。
 <br />
 
 确认本机ruby/git环境(Yosemite自带)，在iTerm2中敲入：

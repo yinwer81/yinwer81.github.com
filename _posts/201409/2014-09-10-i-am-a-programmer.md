@@ -5,7 +5,7 @@ categories: programming
 ---
 Talk is cheap, show me the code.
 {% highlight java %}
-package com.dunkcoder.blog;
+package com.dunkcoder;
 
 /**
  * I am a programmer!
