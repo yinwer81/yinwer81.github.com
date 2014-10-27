@@ -8,7 +8,7 @@ categories: multithread
 
 	NEW, RUNNABLE, BLOCKED, WAITING, TIMED_WAITING 和 TERMINATED
 
-那么六种状态时如何转换的呢？我们先看Thread运行机制图（暂借网图，后面将两图重新画过）：
+那么六种状态时如何转换的呢？我们先看Thread运行机制图（暂借网图，后将重新画过）：
 
 ![示例](/images/ThreadMechanism.jpg)
 
