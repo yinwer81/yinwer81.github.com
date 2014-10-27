@@ -7,7 +7,7 @@ categories: programming leetcode
 本篇记录leetcode的twoSum问题。
 
 twoSum问题官方描述在[这里](https://oj.leetcode.com/problems/two-sum/)，翻译过来大致是：<br />
-给定一个整数数组input和数字target，从整数数组中找出两个数，使得两个数字之和为target，打印这两个数在数组中的下标，数组下标从1开始。
+给定一个整数数组input，如：2,7,9,4，数字target，如：11，从整数数组中找出两个数，使得两个数字之和为target，如：2+9=11，打印这两个数在数组中的下标，数组下标从1开始。
 
 问题分析：<br />
 问题很简单，但是可能需要考虑数组中数字重复，两个整数和溢出整数范围，数组中找不到两个整数的和为target等情况。
@@ -34,4 +34,9 @@ public static int[] twoSum(final int[] input, final long target) {
 }
 {% endhighlight %}
 
-以上。您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
+总结，我们能学到什么：
+>* 简化需求以方便写代码实现，本例中变换表达式的形式后(如：2=11-9)，就可以方便使用hashmap了
+
+以上。
+
+您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。

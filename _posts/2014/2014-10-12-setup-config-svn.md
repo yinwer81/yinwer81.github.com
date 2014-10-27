@@ -5,7 +5,7 @@ categories: svn
 ---
 #### 本篇记录基于SubversionEdge搭建和配置SVN服务。
 <br />
-所用软件和版本如下，都已搜集到[这里](http://pan.baidu.com/s/1c0y9A6G)。
+所用软件和版本如下，都已搜集到[这里](http://pan.baidu.com/s/1c0y9A6G)：
 >* CollabNetSubversionEdge-4.0.11_linux-x86_64.tar.gz
 >* CollabNetSubversionEdge-4.0.11_setup-x86_64.exe
 >* VisualSVN.v2.7.3.zip

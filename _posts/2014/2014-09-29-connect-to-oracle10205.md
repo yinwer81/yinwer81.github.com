@@ -5,7 +5,7 @@ categories: Oracle
 ---
 #### 本篇记录免装Oracle客户端，使用sqldbx连接到数据库Oracle10205。
 <br />
-其中所用软件和版本如下，都已搜集到[这里](http://pan.baidu.com/s/1i3tFzal)。
+其中所用软件和版本如下，都已搜集到[这里](http://pan.baidu.com/s/1i3tFzal)：
 >* instantclient-basic-win32-10.2.0.5.zip
 >* sqldbx
 >* tnsnames.ora样例文件

@@ -15,7 +15,7 @@ categories: programming
 <br />
 根据服务器IP地址和账号密码生成链接，用户点击链接自动Remote并登陆到服务器，缺点是涉及ActiveX，故仅支持IE浏览器，但避免了用户手工的麻烦和出错，用户点赞！
 
-技术方案是将下面代码包装成mstsc.bat
+技术方案是将下面代码包装成mstsc.bat：
 {% highlight bash %}
 cmdkey /delete:TERMSRV/%1
 cmdkey /generic:TERMSRV/%1 /user:%3\\%4 /pass:%5
