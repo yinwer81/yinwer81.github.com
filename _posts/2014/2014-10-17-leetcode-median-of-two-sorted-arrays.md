@@ -75,6 +75,40 @@ public double getMedianOfTwoSortedArrays(int A[], int B[]) {
 }
 {% endhighlight %}
 
+递归的逻辑更好理解，OJ Accepted代码如下：
+{% highlight java %}
+public static int getkth(int A[], int B[], int k, int left, int right) {
+    int n = B.length;
+
+    // recall to change the reference of A and B
+    if (left > right)
+        return getkth(B, A, k, 0, n - 1);
+
+    int i = left + (right - left) / 2;
+    int j = k - 1 - i - 1;
+
+    if ((j < 0 || (j < n && A[i] >= B[j])) && (j + 1 >= n || (j + 1 >= 0 && A[i] <= B[j + 1]))) {
+        return A[i];
+    } else if (j < 0 || (j + 1 < n && A[i] > B[j + 1])) {
+        // recursion
+        return getkth(A, B, k, left, i - 1);
+    } else {
+        // recursion
+        return getkth(A, B, k, i + 1, right);
+    }
+}
+
+public static double getMedianOfTwoSortedArrays(int A[], int B[]) {
+    int m = A.length;
+    int n = B.length;
+    if ((m + n) % 2 == 1) {
+        return getkth(A, B, (m + n) / 2 + 1, 0, m - 1);
+    } else {
+        return (getkth(A, B, (m + n) / 2, 0, m - 1) + getkth(A, B, (m + n) / 2 + 1, 0, m - 1)) / 2.0;
+    }
+}
+{% endhighlight %}
+
 总结，我们能学到什么：
 >* 认真分析需求，找出需求的关键所在，如以上例子中的Median值仅与长度较小的数组相关
 >* 细节问题处理，如以上例子中的奇偶数和边界问题

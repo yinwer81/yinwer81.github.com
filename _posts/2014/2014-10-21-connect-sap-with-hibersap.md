@@ -184,7 +184,7 @@ public class SapJCoUtil {
 }
 {% endhighlight %}
 
-嗯，还可以，简单清爽，省却了包装sapjcoX.jar代码的烦恼，通过JCo和SAP交换数据都可以参考本文进行。
+嗯，还可以，简单清爽，省却了包装sapjcoX.jar代码的烦恼，具体项目中可将AnnotationConfiguration和SessionManager改为注入方式。
 
 测试项目testhibersap的完整代码在[这里](https://github.com/yinwer81/testHibersap)。
 

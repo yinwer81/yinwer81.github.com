@@ -38,7 +38,7 @@ categories: github-pages
     jekyll serve --watch
 
 下面是执行`jekyll serve --watch`命令启动Jekyll服务器预览时几个常见的错误及解决方法：
->* 报大概下面错误时，修改_config.xml，将highlighter设置为`rouge`，本地预览不报错了，代码高亮也OK，**但是推送到Github仓库后，Rouge会导致编译失败，Github Pages不支持Rouge？请知道的朋友们指教！**
+>* 报大概下面错误时，修改_config.xml，将highlighter设置为`rouge`，本地预览不报错了，代码高亮也OK，**但是推送到Github仓库后，Rouge会导致编译失败，Github Pages不支持Rouge？请知道的朋友们指教！** 目前，本地预览我用Rouge，提交到Github我用pygments。
 
     c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/posix-spawn-0.3.9/lib/posix/spawn.rb:164: 
     warning: cannot close fd before spawn

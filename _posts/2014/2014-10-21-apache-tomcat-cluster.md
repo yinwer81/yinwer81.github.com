@@ -76,6 +76,12 @@ categories: programming
 
 在A机器上安装JDK环境，搭建Tomcat环境后，启动并测试以确保Tomcat正常工作。
 
-以上。
+参考以下
+
+<Engine name="Catalina" defaultHost="localhost" jvmRoute="jvm1">         
+    --> 
+<Engine name="Catalina" defaultHost="localhost" jvmRoute="tomcat1">
+
+以上，本文是参考[Tomcat Clustering系列5篇](http://www.ramkitech.com/2012/10/tomcat-clustering-series-simple-load.html)的测试和实践，有梯子的朋友看完整版本会更明白。
 
 您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
