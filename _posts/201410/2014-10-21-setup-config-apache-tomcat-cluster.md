@@ -15,7 +15,7 @@ categories: programming
 
 集群主要作用在高可用(High Availability)和负载均衡(Load Balance)两个方面。
 
-我准备将Apache + Tomcat集群测试环境搭建在三台Windows 2008R2 64bits环境机器上，分别是A（172.16.3.40），B（172.16.3.41）和C（172.16.3.42），A,B和C分别搭建Tomcat环境，部署probe.war，安装Wireshark，另外前置机Apache安装在A机器。这样一来，对用户来说，A机器的Apache地址是透明的，用户无需知道也不关心服务到底由谁来提供，接下来正式开始配置集群环境。
+我准备将Apache + Tomcat集群测试环境搭建在两台Windows 2008R2 64bits环境机器上，分别是A（172.16.3.40）和B（172.16.3.41），AB分别搭建Tomcat环境，部署probe.war，安装Wireshark，另外前置机Apache安装在A机器。这样一来，对用户来说，A机器的Apache地址是透明的，用户无需知道也不关心服务到底由谁来提供，接下来正式开始配置集群环境。
 
 #### 配置Apache前置机Load Balancer
 <br />
@@ -60,13 +60,8 @@ categories: programming
 	worker.tomcat2.port=8009
 	worker.tomcat2.lbfactor=10
 
-	worker.tomcat3.type=ajp13
-	worker.tomcat3.host=172.16.3.42
-	worker.tomcat3.port=8009
-	worker.tomcat3.lbfactor=10
-
 	worker.balancer.type=lb
-	worker.balancer.balance_workers=tomcat1,tomcat2,tomcat3
+	worker.balancer.balance_workers=tomcat1,tomcat2
 
 	worker.stat.type=status
 #### 搭建Tomcat环境和部署probe
