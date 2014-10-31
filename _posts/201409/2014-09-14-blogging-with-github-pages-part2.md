@@ -3,7 +3,7 @@ layout: post
 title: "Blogging with github pages part2"
 categories: github-pages
 ---
-#### 本篇记录在Windows7 64bits环境下本地预览github -pages，接上篇[blogging with github pages part1](/20140912/blogging-with-github-pages-part1/)。
+#### 本篇记录在Windows7 64bits环境下本地预览github -pages，接上篇[blogging with github pages part1](/20140912/blogging-with-github-pages-part1/)
 <br />
 #### 下面是详细过程：
 <br />
@@ -77,7 +77,7 @@ Windows7使用git-credential-winstore记住密码：
 * 使用https方式clone github的仓库
 * 密码凭据保存在：控制面板->用户帐号->管理您的凭据->普通凭据(git:https://github.com)
 
-如何在Mac上搭建github pages环境，请参考下篇[blogging with github pages part3](/20141024/blogging-with-github-pages-part3/)。
+如何在Mac上搭建github pages环境，请参考下篇[blogging with github pages part3](/20141024/blogging-with-github-pages-part3/)
 
 以上。
 
