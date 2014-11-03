@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "JVM线程状态及转换"
-categories: multithread
+categories: concurrency
 ---
 
 从Java 1.5以来，内部枚举类java.lang.Thread.State中定义了如下六个线程状态：
