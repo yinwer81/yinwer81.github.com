@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Median of two sorted arrays问题"
-categories: programming leetcode
+categories: leetcode
 ---
 
 本篇记录leetcode的Median of two sorted arrays问题。
