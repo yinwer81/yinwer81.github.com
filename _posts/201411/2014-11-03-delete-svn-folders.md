@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 删除隐藏svn文件夹
+categories: svn
 ---
 
 客户项目Delivery时，我们需要将最新代码一并打包交付，这时需要删除所有的隐藏`.svn`文件夹。

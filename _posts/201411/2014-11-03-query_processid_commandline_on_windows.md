@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Windows下查询ProcessId和CommandLine"
+categories: programming
 ---
 
  Windows7 64bits环境，使用WMIC查询ProcessId和CommandLine。
