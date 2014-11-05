@@ -3,5 +3,5 @@ permalink: /:year:month:day/:title
 url: http://yinwer81.github.com
 author: Yinwer
 highlighter: pygments
-paginate: 20
+paginate: 15
 excerpt_separator: ""
