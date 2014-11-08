@@ -1,64 +1,23 @@
 ---
 layout: post
-title: "移除单链表中间元素及反转"
+title: "找到两个单链表的第一个相交点"
 categories: programming
 ---
 
-这几天在成都校招，计算机及相关专业本科/硕士，笔试30分钟，两个代码算法题，任选其一：
->* 移除单链表的中间元素
->* 反转单链表，递归和非递归两种方式
+昨天继续校招，计算机及相关专业本科/硕士，笔试30分钟，两个算法题，任选其一：
+>* 给定降序整数组(intArray)和长整数(target)，检查整数组中是否存在两个数，其和为target，如果有则找出其在数组中的位置
+>* 给定两个单链表(list1,list2)，检查两个链表是否有交点，如果有返回第一个交点
 
-这是很简单的题，网上一搜一把，目的是考察学生有基础编码能力，不要求编译测试通过，只要写清楚思路和注意EDGE CASE都算过，但很可惜，通过率很低。为什么呢？
+第一题其实就是我在前面介绍过的[twoSum问题](/20141007/leetcode-twosum/)，另外因为数组已降序排列，可考虑使用头尾指针来解题，效率可能会比使用HashMap要好。此处略去不提。
 
-如果自己构造数据结构，代码稍多一些，我们也当然希望看到学生能多表现自己：
-{% highlight java %}
-package com.dunkcoder;
+至于第二题，先要搞清楚的是：如果两个单链表相交，那么单链表(list1,list2)的末尾节点一定会相同。因为单链表只可能为Y/V型相交，不可能为X型，否则会出现某一节点存在两个next节点的情况。
 
-public class SinglyList<T> {
+复用前面[移除单链表中间元素及反转]()中定义的单链表SinglyList，解题思路和步骤为：
 
-	private Node<T> head;
-	private Node<T> tail;
-
-	public SinglyList(Node<T> head) {
-		this.head = head;
-		this.tail = head;
-	}
-
-	public Node<T> head() {
-		return this.head;
-	}
-
-	public void add(Node<T> node) {
-		this.tail.next = node;
-		this.tail = node;
-	}
-
-	public void remove(Node<T> node) {
-		// TODO:
-	}
-
-	public static class Node<T> {
-		private Node<T> next;
-		private T object;
-
-		public Node(T object) {
-			this.object = object;
-		}
-
-		// getter() setter()
-
-		public Node<T> next() {
-			return next;
-		}
-
-		public void setNext(Node<T> next) {
-			this.next = next;
-		}
-
-		// toString() hashCode() equals() ...
-	}
-}
-{% endhighlight %}
+	1. 定义函数findTheFirstCross(SinglyList<T> list1, SinglyList<T> list2)，head1为长度较短的链表
+	2. 取链表list1和list2的长度，如果list1比list2长，recall以保证按短，长的方式传参
+	3. 取得单链表list2减去单链表list1的长度差shortOfList1，并使用指针point2从list2头部开始，位移到shortOfList1位置
+	4. 此时，使用指针point1从list1头部开始，同时移动，当point1指向的元素与point2指向的元素相同时，即为第一个交点
 
 下面是算法和测试代码：
 {% highlight java %}
@@ -66,10 +25,16 @@ package com.dunkcoder;
 
 public class TestSinglyList {
 
-	public static <T> SinglyList<T> removeMiddle(SinglyList<T> list) {
-		SinglyList.Node<T> current = list.head();
+	public static <T> SinglyList<T>.Node findTheFirstCross(SinglyList<T> list1, SinglyList<T> list2) {
+
+		int shortOfList1 = list2.size()-list1.size();
+
+		if (shortOfList1 < 0)
+			return findTheFirstCross(list2, list1);
+
+		SinglyList.Node<T> head1 = list1.head();
 		int index = 0;
-		SinglyList.Node<T> middle = list.head();
+		SinglyList.Node<T> head2 = list2.head();
 
 		// 定义2个指针：current和middle
 		// current的步速是middle的2倍，当current走到尾巴的时候，middle刚好指在中间元素
