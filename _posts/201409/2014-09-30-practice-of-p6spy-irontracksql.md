@@ -45,7 +45,7 @@ irontracksql运行界面如下图，默认输出PreparedStatement语句，可在
 
     菜单：View->Show Queries->Bound Variables
 
-![示例](/images/IronTrackSQL.jpg)
+![示例](/images/IronTrackSQL.png)
 
 以上。
 
