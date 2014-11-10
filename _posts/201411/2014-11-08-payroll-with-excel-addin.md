@@ -9,10 +9,10 @@ categories: programming
 >* 每月放粮日通过Addin程序发送邮件，每人2封，一封为加密过的Payslip(EXCEL附件)，另一封为附件密码
 
 Payroll程序非常简单，一个EXCEL的Payroll模板(Payroll.xlsx)和一个EXCEL Addin程序(Payroll.xla)，见下图：
-![示例](/images/payrollList.png)
+![示例](/images/PayrollList.png)
 
 **邮件发送程序依赖于CDO，故不支持EXCEL2007以上版本。**我这里是EXCEl2013版本，仅作演示用。
-![示例](/images/payrollSheet.png)
+![示例](/images/PayrollSheet.png)
 
 
 
