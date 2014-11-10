@@ -4,9 +4,12 @@ title: "EXCEL加载项 payroll"
 categories: programming
 ---
 
-公司还没有上专业的工资管理系统，我们提供了一个简单的EXCEL Payroll程序以简化其工作：
->* 专人手工在EXCEL模板中维护员工每月工资和奖金数据
->* 每月放粮日通过VBA Addin发送Payroll邮件，一封为加密过的Payslip附件，另一封为附件密码
+公司还没有上专业的工资管理系统，我们提供了一个简单实用的Payroll程序以支持其工作：
+>* 专人手工在EXCEL的Payroll模板(Payroll.xlsx)中维护员工工资和奖金数据
+>* 每月放粮日通过Addin程序发送邮件，每人2封，一封为加密过的Payslip(EXCEL附件)，另一封为附件密码
+
+Payroll程序非常简单：一个EXCEL的Payroll模板(Payroll.xlsx)和一个EXCEL Addin程序(Payroll.xla)，见下图：
+
 
 
 

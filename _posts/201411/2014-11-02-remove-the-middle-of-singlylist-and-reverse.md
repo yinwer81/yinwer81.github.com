@@ -4,7 +4,7 @@ title: "移除单链表中间元素及反转"
 categories: programming
 ---
 
-这几天在成都校招，计算机及相关专业本科/硕士，笔试30分钟，两个代码算法题，任选其一：
+这几天在成都校招，计算机及相关专业本科/硕士，笔试30分钟，其中有两个代码算法题，任选其一：
 >* 移除单链表的中间元素
 >* 反转单链表，递归和非递归两种方式
 
@@ -29,7 +29,7 @@ public class SinglyList<T> {
 	}
 
 	public void add(Node<T> node) {
-		this.tail.next = node;
+		this.tail.setNext(node);
 		this.tail = node;
 	}
 
