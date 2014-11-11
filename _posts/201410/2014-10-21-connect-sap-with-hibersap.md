@@ -190,6 +190,8 @@ public class SapJCoUtil {
 
 测试项目testhibersap的完整代码在[这里](https://github.com/yinwer81/testHibersap)。
 
+LinuxX64+Tomcat环境，找不到sapjco3怎么办？<br/>
+==>修改`catalina.sh`文件中的`JAVA_OPTS`，指定`-Djava.library.path=/usr/sapjco3`，将libsapjco3.so放到该目录。
 
 以上。
 
