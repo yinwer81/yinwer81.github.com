@@ -19,7 +19,7 @@ categories: programming
 
 #### 配置Apache前置机Load Balancer
 <br />
-在A机器上安装Apache后，启动并测试`It works!`页面是否正常打开，确保Apache正常工作。
+在A机器上安装Apache后，启动并测试`http://A_IP/`80端口首页`It works!`是否正常打开，确保Apache正常工作。
 
 这里选用mod_jk做负载均衡器，mod_jk默认使用非常简单的Round Robin Scheduling算法分发前端请求。<br/>安装配置mod_jk connector，从[这里](http://tomcat.apache.org/download-connectors.cgi)可下载对应版本，将mod_jk.so拷贝到Apache的modules目录下，接着修改Apache的httpd.conf文件以配置mod_jk（粘贴以下内容到文件末尾并保存退出）：
 
@@ -64,6 +64,7 @@ categories: programming
 	worker.balancer.balance_workers=tomcat1,tomcat2
 
 	worker.stat.type=status
+此时，重启Apache服务，再次确认`http://A_IP/`80端口首页`It works!`是否正常打开，确保Apache正常工作。
 #### 搭建Tomcat环境和部署probe
 <br />
 
@@ -71,14 +72,45 @@ categories: programming
 
 在A机器上安装JDK环境，搭建Tomcat环境后，启动并测试以确保Tomcat正常工作。
 
-参考以下
+接下来，修改tomcat中`conf\server.xml`配置，请参考：
 
-<Engine name="Catalina" defaultHost="localhost" jvmRoute="jvm1">         
-    --> 
-<Engine name="Catalina" defaultHost="localhost" jvmRoute="tomcat1">
+打开注释并设置jvmRoute，这样Tomcat的SessionId就会长成这样：`<Random Value like before>.<jvmRoute>`，请注意，这里需要改成tomcatB。
+{% highlight xml %}
+<Engine name="Catalina" defaultHost="localhost" jvmRoute="tomcatA">
+{% endhighlight %}
+接下来，配置Cluster和广播地址以实现Session Replication，将Cluster配置到Engine中，其中D类(范围：224.0.0.0 to 239.255.255.255)地址，这里是228.0.0.4为广播地址，参考以下内容：
+{% highlight xml %}
+<Cluster className="org.apache.catalina.ha.tcp.SimpleTcpCluster" channelSendOptions="8">
+	<Channel className="org.apache.catalina.tribes.group.GroupChannel">
+		<Membership className="org.apache.catalina.tribes.membership.McastService" address="228.0.0.4" port="45564" frequency="500" dropTime="3000" /> 
+		<Sender className="org.apache.catalina.tribes.transport.ReplicationTransmitter">
+			<Transport className="org.apache.catalina.tribes.transport.nio.PooledParallelSender" /> 
+	  	</Sender>
+	  	<Receiver className="org.apache.catalina.tribes.transport.nio.NioReceiver" address="auto" port="4000" autoBind="100" selectorTimeout="5000" maxThreads="6" /> 
+	  	<Interceptor className="org.apache.catalina.tribes.group.interceptors.TcpFailureDetector" /> 
+	  	<Interceptor className="org.apache.catalina.tribes.group.interceptors.MessageDispatch15Interceptor" /> 
+  	</Channel>
+  	<Valve className="org.apache.catalina.ha.tcp.ReplicationValve" filter="" /> 
+  	<Valve className="org.apache.catalina.ha.session.JvmRouteBinderValve" /> 
+  	<ClusterListener className="org.apache.catalina.ha.session.JvmRouteSessionIDBinderListener" /> 
+  	<ClusterListener className="org.apache.catalina.ha.session.ClusterSessionListener" /> 
+</Cluster>
+{% endhighlight %}
+最后，在Application的web.xml中，配置`<distributable/>`标签。
 
-**我们要注意的是：**
+这里以probe.war为例，初次启动tomcat后，在tomcat中webapps下找到解开后的probe，将`<distributable/>`标签配置到web.xml中，同时，修改tomcat中cong/tomcat-users.xml，增加以下内容：
+{% highlight xml %}
+<role rolename="manager"/>
+<role rolename="admin"/>
+<user username="admin" password="" roles="admin,manager"/>
+{% endhighlight %}
 
-以上，本文是参考[Tomcat Clustering系列5篇](http://www.ramkitech.com/2012/10/tomcat-clustering-series-simple-load.html)的测试和实践，有梯子的朋友看完整英文版本会更明白。
+将以上内容复制到B机器，并记得修改对应的jvmRoute，启动A和B机器上的tomcat，通过链接`http://A_IP/probe`访问probe，可测试并验证Tomcat Cluster是否配置成功。
+
+在A机器上安装Wireshark，启动后点击工具栏第一个按钮`List the available capture interfaces ...`，弹出的对话框中选择对应的网卡，并点击Start按钮，开始监控网络包，Filter中填写`ip.addr == B_IP`，Apply后可以看到大约每隔0.5秒(默认)的数据包，内容大约如下：
+
+	Source: B_IP, Destination: 228.0.0.4, Protocal: UDP, Source port: 45564 Destination port: 45564
+
+以上，本文参考[Tomcat Clustering系列5篇](http://www.ramkitech.com/2012/10/tomcat-clustering-series-simple-load.html)进行测试和实践，有梯子的最好看原版。
 
 您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
