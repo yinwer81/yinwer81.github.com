@@ -78,7 +78,7 @@ categories: programming
 {% highlight xml %}
 <Engine name="Catalina" defaultHost="localhost" jvmRoute="tomcatA">
 {% endhighlight %}
-接下来，配置Cluster和广播地址以实现Session Replication，将Cluster配置到Engine中，其中D类(范围：224.0.0.0 to 239.255.255.255)地址，这里是228.0.0.4为广播地址，参考以下内容：
+接下来，配置Cluster和广播地址以实现Session Replication，将Cluster配置到Engine中，其中D类(范围：224.0.0.0 to 239.255.255.255)地址，这里是228.0.0.4为广播地址，Windows默认已开启广播，参考以下内容：
 {% highlight xml %}
 <Cluster className="org.apache.catalina.ha.tcp.SimpleTcpCluster" channelSendOptions="8">
 	<Channel className="org.apache.catalina.tribes.group.GroupChannel">
@@ -110,6 +110,10 @@ categories: programming
 在A机器上安装Wireshark，启动后点击工具栏第一个按钮`List the available capture interfaces ...`，弹出的对话框中选择对应的网卡，并点击Start按钮，开始监控网络包，Filter中填写`ip.addr == B_IP`，Apply后可以看到大约每隔0.5秒(默认)的数据包，内容大约如下：
 
 	Source: B_IP, Destination: 228.0.0.4, Protocal: UDP, Source port: 45564 Destination port: 45564
+
+需要注意的是：
+>* Session-Sticky的局域网内广播有一定开销，当Cluster中机器较多时也容易有Broadcast Storm Problem问题。建议尽量使用Non-Sticky方式。 
+>* Cluster只能保证服务可用，只有从Application层面满足了Stateless才能实现无缝切换，即Request FailOver
 
 以上，本文参考[Tomcat Clustering系列5篇](http://www.ramkitech.com/2012/10/tomcat-clustering-series-simple-load.html)进行测试和实践，有梯子的最好看原版。
 
