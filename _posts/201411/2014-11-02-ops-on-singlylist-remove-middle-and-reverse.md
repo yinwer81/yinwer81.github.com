@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "移除单链表中间元素及反转"
+title: "移除单链表中间元素 反转单链表"
 categories: programming
 ---
 
