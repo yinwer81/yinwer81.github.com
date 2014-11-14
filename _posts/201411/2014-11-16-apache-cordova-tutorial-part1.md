@@ -11,7 +11,7 @@ categories: programming
 >* 处理和优化TouchEvents, Scrolling, Styling和PageTransitions等Mobile特性
 >* 使用Single-Page Architecture和HTML templates构建应用
 
-本篇记录怎样使用CLI(Command Line Interface)创建编译打包Cordova项目，Windows7 64bits环境。
+本篇记录在Windows7 64bits环境中怎样使用CLI(Command Line Interface)创建编译打包Cordova(Android)项目，iOS环境另篇再讲。
 
 #### 安装配置nodeJS和npm环境
 <br/>
@@ -71,7 +71,7 @@ Timeout后修改`<npm文件夹>/node_modules/cordova-lib/src/cordova/platforms.j
 	$ cordova platforms add android
 解决办法：SDK Manager中安装Android 4.4.2(API 19)即可，菜单：Tools->Options中可以设置代理。
 
-接着，执行以下命令安装device和console插件到HelloCordova项目：
+接着，执行以下命令安装device和console插件到HelloCordova项目(安装到HelloCordova/plugins目录)：
 
 	$ cordova plugin add org.apache.cordova.device
 	$ cordova plugin add org.apache.cordova.console
@@ -103,6 +103,6 @@ Timeout后修改`<npm文件夹>/node_modules/cordova-lib/src/cordova/platforms.j
 
 ![示例](/images/CordovaTutorial.png)
 
-以上。
+就酱，嗯。
 
 您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
