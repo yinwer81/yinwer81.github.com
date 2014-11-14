@@ -193,6 +193,6 @@ public class SapJCoUtil {
 LinuxX64+Tomcat环境，找不到sapjco3怎么办？<br/>
 ==>修改`catalina.sh`文件中的`JAVA_OPTS`，指定`-Djava.library.path=/usr/sapjco3`，将libsapjco3.so放到该目录。
 
-以上。
+就酱，嗯。
 
 您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。

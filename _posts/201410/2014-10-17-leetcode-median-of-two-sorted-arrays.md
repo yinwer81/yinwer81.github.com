@@ -114,6 +114,6 @@ public static double getMedianOfTwoSortedArrays(int A[], int B[]) {
 >* 细节问题处理，如以上例子中的奇偶数和边界问题
 >* 二分法查找的时间复杂度是O(log)
 
-以上。
+就酱，嗯。
 
 您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。

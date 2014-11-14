@@ -68,6 +68,6 @@ Nexus的一些操作：
 
 	mvn archetype:create -DgroupId=com.test -DartifactId=test-webapp -DarchetypeArtifactId=maven-archetype-webapp
 
-以上。
+就酱，嗯。
 
 您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。

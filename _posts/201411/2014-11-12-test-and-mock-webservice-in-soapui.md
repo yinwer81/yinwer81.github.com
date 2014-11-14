@@ -34,6 +34,8 @@ ServiceProvider提供REST方式的Url后，右键点Projects -> New REST Project
 逐层打开并双击Request 1进行测试，使用PostMethod，MediaType选择application/json并输入`{"IvMatnr":"P-XXXXXX"}`后Submit，参考下图：
 ![示例](/images/restProjectTest.png)
 
-以上，写到这里时发现一个很好的资源[接口测试工具SoapUI](/downloads/接口测试工具SoapUI.pdf)，转在这里供各位下载，版权归原作者所有。
+写到这里时发现一个很好的资源[接口测试工具SoapUI](/downloads/接口测试工具SoapUI.pdf)，转在这里供各位下载，版权归原作者所有。
+
+就酱，嗯。
 
 您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。

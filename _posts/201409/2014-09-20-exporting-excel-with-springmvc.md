@@ -46,8 +46,8 @@ public View export() {
 
 {% endhighlight %}
 
+Spring 3.2.6.RELEASE和POI 3.9环境测试通过，中文文件名在各浏览器下的兼容问题不在此文范围。
 
-以上，Spring 3.2.6.RELEASE和POI 3.9环境测试通过，中文文件名在各浏览器下的兼容问题不在此文范围。
+就酱，嗯。
 
 您有任何问题或建议, 请给我写[邮件](mailto:yinwer81@gmail.com)。
-

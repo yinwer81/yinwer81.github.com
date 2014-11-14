@@ -35,7 +35,8 @@ categories: websphere
 
 登陆集成方案控制台，验证Websphere Application Server套件版本：7.0.0.27
 
-以上，后面将陆续记录一些Websphere的应用实践。
+后面将陆续记录一些Websphere的应用实践。
+
+就酱，嗯。
 
 您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
-

@@ -99,7 +99,8 @@ categories: redmine
 
 后面将会继续更新一些插件的安装和使用方法，更多内容可以参考[Bitnami Redmine WIKI](http://wiki.bitnami.com/Applications/BitNami_Redmine)。
 
-以上，后面将陆续记录一些Redmine及其插件应用实践。
+后面将陆续记录一些Redmine及其插件应用实践。
+
+就酱，嗯。
 
 您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
-

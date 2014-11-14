@@ -47,6 +47,6 @@ irontracksql运行界面如下图，默认输出PreparedStatement语句，可在
 
 ![示例](/images/IronTrackSQL.png)
 
-以上。
+就酱，嗯。
 
 您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。

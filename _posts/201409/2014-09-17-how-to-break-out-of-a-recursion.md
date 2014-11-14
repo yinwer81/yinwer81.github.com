@@ -114,7 +114,6 @@ public static void main(String[] args) {
 >* 通过给递归函数定义返回值，在递归过程中判断该返回值可结束递归
 >* 分析和简化需求，如：变换表达式的形式，找出需求的关键所在，如：2*Sum(n) = Sum(input)
 
-以上。
+就酱，嗯。
 
 您有任何问题或建议, 请给我写[邮件](mailto:yinwer81@gmail.com)。
-

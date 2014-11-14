@@ -115,6 +115,8 @@ categories: programming
 >* Session-Sticky的局域网内广播有一定开销，当Cluster中机器较多时也容易有Broadcast Storm Problem问题。建议尽量使用Non-Sticky方式。 
 >* Cluster只能保证服务可用，只有从Application层面满足了Stateless才能实现无缝切换，即Request FailOver
 
-以上，本文参考[Tomcat Clustering系列5篇](http://www.ramkitech.com/2012/10/tomcat-clustering-series-simple-load.html)进行测试和实践，有梯子的最好看原版。
+本文参考[Tomcat Clustering系列5篇](http://www.ramkitech.com/2012/10/tomcat-clustering-series-simple-load.html)进行测试和实践，有梯子的最好看原版。
+
+就酱，嗯。
 
 您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。

@@ -79,7 +79,6 @@ Windows7使用git-credential-winstore记住密码：
 
 如何在Mac上搭建github pages环境，请参考下篇[blogging with github pages part3](/20141024/blogging-with-github-pages-part3/)
 
-以上。
+就酱，嗯。
 
 您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
-

@@ -20,6 +20,6 @@ categories: programming
 
 使用示例：wmic.bat notepad.exe
 
-以上，有兴趣的可以继续深挖WMIC。
+就酱，嗯。有兴趣的可以继续深挖WMIC。
 
 您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。

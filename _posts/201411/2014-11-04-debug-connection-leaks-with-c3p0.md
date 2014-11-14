@@ -35,6 +35,6 @@ categories: programming
 {% endhighlight %}
 很容易从堆栈信息定位到具体位置：没有CodeReview，DAO使用不规范导致，继承了HibernateDaoSupport，通过getHibernateTemplate().getSessionFactory().openSession()获得session，session.createSQLQuery()后**没有session.close()**
 
-以上。
+就酱，嗯。
 
 您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
