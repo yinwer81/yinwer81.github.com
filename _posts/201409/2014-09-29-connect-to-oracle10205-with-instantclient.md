@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "免装客户端连接到Oracle10205"
+title: "Connect to Oracle10205 with instantClient"
 categories: Oracle
 ---
 #### 本篇记录免装Oracle客户端，使用sqldbx连接到数据库Oracle10205。

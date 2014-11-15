@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "安装和配置Oracle10205"
+title: "Setup Oracle10205 on Windows server"
 categories: Oracle
 ---
 #### 本篇记录在Windows2008R2 64bits环境中安装和配置Oracle10205过程，以及一些注意事项。

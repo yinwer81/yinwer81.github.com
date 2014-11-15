@@ -4,7 +4,7 @@ title: "Apache Cordova 入门(1)"
 categories: Cordova
 ---
 
-本系列逐篇记录下面五方面内容，cordova-tutorial项目代码Host在[Github这里](https://github.com/yinwer81/cordova-tutorial)，感兴趣的可以参考学习。
+本系列记录下面五方面内容，cordova-tutorial项目代码Host在[Github这里](https://github.com/yinwer81/cordova-tutorial)，感兴趣的可以参考学习。
 >* 使用CLI(Command Line Interface)创建编译打包Cordova项目
 >* 使用Json, LocalStorage, Memory和Websql进行数据存取
 >* 调用Geolocation, Contacts和Camera等Cordova APIs

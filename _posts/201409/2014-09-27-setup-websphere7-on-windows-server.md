@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "安装和配置Websphere ND7"
+title: "Setup Websphere ND7 on Windows server"
 categories: websphere
 ---
 #### 本篇记录在Windows2008R2 64bits环境中安装配置Websphere ND7和补丁27。
