@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Exporting excel in SpringMVC"
+title: "Export excel in SpringMVC"
 categories: programming
 ---
 在SpringMVC中导出excel非常简单，记录如下：

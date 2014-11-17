@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "使用Nexus搭建maven私服"
+title: "Setup internal maven repository using nexus"
 categories: maven
 ---
 

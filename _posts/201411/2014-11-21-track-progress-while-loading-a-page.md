@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Java的观察者模式"
+title: "Track progress while loading a page"
 categories: programming
 ---
 

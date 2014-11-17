@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "理解Java的4种引用类型"
+title: "Understanding java references"
 categories: programming
 ---
 Java中的4种引用类型，中文名为强引用，软引用，弱引用以及虚引用，虚引用也就是传说中的幽灵引用。

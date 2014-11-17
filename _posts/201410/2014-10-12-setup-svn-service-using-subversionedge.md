@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "搭建和配置SVN服务"
+title: "Setup SVN service using subversionedge"
 categories: svn
 ---
 #### 本篇记录基于SubversionEdge搭建和配置SVN服务。

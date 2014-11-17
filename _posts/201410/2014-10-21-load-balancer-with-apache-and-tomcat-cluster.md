@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Apache+Tomcat集群"
+title: "Load balancer with apache and tomcat cluster"
 categories: programming
 ---
 

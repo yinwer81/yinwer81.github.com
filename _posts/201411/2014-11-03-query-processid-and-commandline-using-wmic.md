@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Windows下查询ProcessId和CommandLine"
+title: "Query processId and commandLine using WMIC"
 categories: programming
 ---
 

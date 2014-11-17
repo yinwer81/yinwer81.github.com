@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "JVM线程状态及转换"
+title: "Understanding jvm thread states"
 categories: concurrency
 ---
 

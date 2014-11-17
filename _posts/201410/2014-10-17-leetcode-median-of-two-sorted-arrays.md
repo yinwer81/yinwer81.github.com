@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Median of two sorted arrays问题"
+title: "Find the median of two sorted arrays"
 categories: leetcode
 ---
 

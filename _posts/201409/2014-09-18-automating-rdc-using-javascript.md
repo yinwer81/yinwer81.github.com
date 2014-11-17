@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Automating remote desktop connection using javascript"
+title: "Automating RDC using javascript"
 categories: programming
 ---
 #### 背景：

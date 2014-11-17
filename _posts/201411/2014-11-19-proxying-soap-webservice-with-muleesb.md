@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "注册WebService到Mule并测试"
+title: "Proxying webservice with mule esb"
 categories: WebService
 ---
 

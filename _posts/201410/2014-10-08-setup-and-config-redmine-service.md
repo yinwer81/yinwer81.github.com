@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "搭建和配置Redmine环境"
+title: "Setup and config redmine service"
 categories: redmine
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "移除单链表中间元素 反转单链表"
+title: "Ops on SinglyList：removeMiddle and reverse"
 categories: programming
 ---
 

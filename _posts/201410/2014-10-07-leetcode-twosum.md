@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "TwoSum问题"
+title: "Twosum problem"
 categories: leetcode
 ---
 

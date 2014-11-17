@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "找到两个单链表的第一个相交点"
+title: "Ops on SinglyList: find the first cross of two"
 categories: programming
 ---
 

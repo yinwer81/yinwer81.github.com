@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Apache Cordova 入门(1)"
+title: "Apache Cordova tutorial part1"
 categories: Cordova
 ---
 

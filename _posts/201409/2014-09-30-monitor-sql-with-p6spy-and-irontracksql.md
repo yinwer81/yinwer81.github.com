@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Monitoring sql with p6spy and irontracksql"
+title: "Monitor sql with p6spy and irontracksql"
 categories: programming
 ---
 #### 本篇记录在开发阶段怎样使用p6spy和irontracksql打印和监控SQL执行情况。

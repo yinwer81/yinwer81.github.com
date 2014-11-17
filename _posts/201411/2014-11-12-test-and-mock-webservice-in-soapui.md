@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "使用soapUI Mock和测试WebService"
+title: "Test and mock webservices in soapUI"
 categories: WebService
 ---
 

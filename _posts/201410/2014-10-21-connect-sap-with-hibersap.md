@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "使用hibersap从SAP中读数据"
+title: "Connect sap with hibersap"
 categories: programming
 ---
 

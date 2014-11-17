@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 删除隐藏svn文件夹
+title: "Recovering from SVN folder"
 categories: svn
 ---
 
