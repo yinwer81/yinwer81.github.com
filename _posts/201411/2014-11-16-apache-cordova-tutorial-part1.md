@@ -78,6 +78,8 @@ Timeout后修改`<npm文件夹>/node_modules/cordova-lib/src/cordova/platforms.j
 
 在SDK Manager中菜单：Tools->Manage AVDs ...创建一个Android模拟器：
 
+	cordova plugin add org.apache.cordova.dialogs
+
 ![示例](/images/createAVD.png)
 
 编译运行HelloCordova程序，启动Android模拟器，模拟器启动很慢，需要多等一会。
@@ -91,10 +93,11 @@ Timeout后修改`<npm文件夹>/node_modules/cordova-lib/src/cordova/platforms.j
 	$ cordova run android
 
 编辑www目录下的index.html，修改以下内容：
-
-	<p class="event received">Device is Ready</p>
-	-->
-	<p class="event received">HelloCordova!</p>
+{% highlight html %}
+<p class="event received">Device is Ready</p>
+-->
+<p class="event received">HelloCordova!</p>
+{% endhighlight %}
 再次启动Android模拟器，确认OK，显示界面部分截图如下所示：
 
 ![示例](/images/HelloCordova.png)
