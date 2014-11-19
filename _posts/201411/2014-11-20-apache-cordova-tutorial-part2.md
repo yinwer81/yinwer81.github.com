@@ -184,7 +184,20 @@ $('.help-btn').on('click', function() {
 	    $('.search-key').on('keyup', findByName);
 	}
 
-重新编译并测试，界面如右图左所示，看起来还不错。
+重新编译并测试，界面如右图左所示，看起来还不错，挺漂亮的。
+
+在iOS7中，如左下图示，StatusBar和应用会有重叠导致界面显示瑕疵，安装使用statusbar插件来解决。
+
+![示例](/images/statusbarOverlapped.png)   ![示例](/images/statusbarOverlapFixed.png)	
+
+	# 安装statusbar插件
+	cordova plugins add org.apache.cordova.statusbar
+
+	# 修改app.js，将下面代码加入deviceready事件
+	StatusBar.overlaysWebView( false );
+	StatusBar.backgroundColorByHexString('#ffffff');
+	StatusBar.styleDefault();
+重新编译并在iOS模拟器上测试，嗯，没问题了，如右上图示。
 
 就酱，嗯。
 
