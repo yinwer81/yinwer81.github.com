@@ -4,7 +4,7 @@ title: "Apache Cordova tutorial part1"
 categories: Cordova
 ---
 
-本系列记录下面五方面内容，cordova-tutorial项目代码Host在[Github这里](https://github.com/yinwer81/cordova-tutorial)，感兴趣的可以参考学习。
+本系列记录以下五方面内容，cordova-tutorial项目代码Host在[Github这里](https://github.com/yinwer81/cordova-tutorial)，感兴趣的可以参考学习。
 >* 使用CLI(Command Line Interface)创建编译打包Cordova项目
 >* 使用Json, LocalStorage, Memory和Websql进行数据存取
 >* 调用Geolocation, Contacts和Camera等Cordova APIs
@@ -68,7 +68,12 @@ Timeout后修改`<npm文件夹>/node_modules/cordova-lib/src/cordova/platforms.j
 执行以下命令，添加项目对Android平台的支持时，报错`Error: Please install Android target "android-19"`。
 	
 	$ cd HelloCordova
+
+	# 添加Android平台支持
 	$ cordova platforms add android
+
+	# 添加iOS平台支持
+	$ cordova platforms add ios
 解决办法：SDK Manager中安装Android 4.4.2(API 19)即可，菜单：Tools->Options中可以设置代理。
 
 接着，执行以下命令安装device和console插件到HelloCordova项目(安装到HelloCordova/plugins目录)：
@@ -82,9 +87,22 @@ Timeout后修改`<npm文件夹>/node_modules/cordova-lib/src/cordova/platforms.j
 
 ![示例](/images/createAVD.png)
 
-编译运行HelloCordova程序，启动Android模拟器，模拟器启动很慢，需要多等一会。
+编译运行HelloCordova程序，启动Android/iOS模拟器，模拟器启动很慢，需要多等一会，iOS平台依赖[ios-sim](https://github.com/yinwer81/ios-sim)项目。
 
-	$ cordova build
+	# 编译android
+	$ cordova build android
+
+	# 编译ios
+	$ sudo cordova build ios
+
+	# ios项目将编译到HelloCordova/platforms/ios目录，双击HelloCordova.xcodeproj在Xcode中打开项目并将项目运行在iOS模拟器，
+	也可以直接在命令行将程序运行在模拟器。
+
+	# 安装ios-sim
+	# sudo npm install -g ios-sim
+	
+	# 运行到ios模拟器
+	# cordova emulate ios
 	
 	# 编译HelloCordova/platforms/android文件夹内的项目，运行到模拟器
 	$ cordova emulate android

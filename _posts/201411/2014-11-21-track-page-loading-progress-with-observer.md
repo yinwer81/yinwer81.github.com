@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Track progress while loading a page"
+title: "Track page loading progress with observer"
 categories: programming
 ---
 
