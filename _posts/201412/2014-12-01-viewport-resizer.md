@@ -21,6 +21,8 @@ javascript: void((function(d) {
 })(document));
 {% endhighlight %}
 
+国人已将其封装为Chrome插件，传送门在[这里](https://chrome.google.com/webstore/detail/viewport-resizer/kapnjjcfcncngkadhpmijlkblpibdcgm/related?hl=zh-CN)。
+
 就酱，嗯。
 
 您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
