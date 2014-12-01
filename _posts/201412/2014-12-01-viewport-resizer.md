@@ -6,8 +6,8 @@ categories: frontend
 
 我们在`Employee Directory`和各个`Public Account`项目中需要兼容各种屏幕尺寸设备，于是要测试和调试html5页面在各设备的展现情况，如：iPad, iPhone, noteX等，以前的做法是手工将Chrome窗口调整到分辨率大小，土到掉渣。
 
-在网上瞎转的时候找到了Viewreport Resizer，官网在[这里](http://lab.maltewassermann.com/viewport-resizer/)，瞎点测试了一下，同样是基于bookmarklet，下图所示为官网在iPhone5大小竖屏中的页面表现。 
-![示例](/images/viewreportresizer.png)
+在网上瞎转的时候找到了Viewport Resizer，官网在[这里](http://lab.maltewassermann.com/viewport-resizer/)，瞎点测试了一下，同样是基于bookmarklet，下图所示为官网在iPhone5大小竖屏中的页面表现。 
+![示例](/images/viewportresizer.png)
 
 1. 拖拽图中`Click or Bookmark`到书签栏可创建Resizer书签。
 2. 待测试页面加载完成以后，点击Resizer该标签，重新加载页面，并在顶部显示`Viewport Resizer`Toolbar栏。
