@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Frontend tool: Viewreport Resizer"
+title: "Frontend tool: Viewport Resizer"
 categories: frontend
 ---
 
