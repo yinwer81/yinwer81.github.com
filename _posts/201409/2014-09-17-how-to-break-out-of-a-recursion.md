@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to break out of a resursion"
+title: "How to break out of a recursion"
 categories: programming
 ---
 #### Java中，我们用break跳出循环，那跳出递归怎么办？举例如下：
