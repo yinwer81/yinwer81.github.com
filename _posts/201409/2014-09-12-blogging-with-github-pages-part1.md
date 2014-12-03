@@ -37,6 +37,4 @@ Clone喜欢的博客模板到本地（我对前端不擅长，且非常喜欢这
 
 如何在本地调试预览github pages，请参考下篇[blogging with github pages part2](/20140914/blogging-with-github-pages-part2/)
 
-就酱，嗯。
-
-您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
+就酱，您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
