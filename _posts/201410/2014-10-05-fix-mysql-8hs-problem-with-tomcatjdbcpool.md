@@ -6,7 +6,7 @@ categories: programming
 
 刚刚交付一个业务自助系统，运行环境是SpringMVC, JPA(Hibernate), MySql(Tomcat jdbcPool)。
 
-每天凌晨0点到早上9点是没人访问的，于是每天上班均收到通知：系统报错，不能登录。经查日志，系统报CommunicationsException，大致如下：
+每天凌晨0点到早上9点是没人访问的，于是每天上班均收到通知：系统报错，不能登录。经查日志，系统报错大致如下：
 
     org.hibernate.SessionException: Session is closed!
     Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure ...
@@ -42,6 +42,4 @@ categories: programming
 
 记录在此，其他连接池也有类似的处理方法。
 
-就酱，嗯。
-
-您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
+就酱，嗯。您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。

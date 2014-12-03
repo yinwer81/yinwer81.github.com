@@ -6,7 +6,7 @@ categories: redmine
 
 #### 本篇记录在Ubuntu 64bits环境下搭建和配置Redmine。
 <br />
-所用软件和版本如下，都已搜集到[这里](http://pan.baidu.com/s/1gdzPxwJ)：
+所用软件和版本如下，都已搜集到[这里](http://pan.baidu.com/s/1gdzPxwJ)供参考：
 >* bitnami-redmine-2.3.0-2-linux-installer.run
 >* bitnami-redmine-2.3.0-2-windows-installer.exe
 

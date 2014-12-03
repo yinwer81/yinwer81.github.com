@@ -5,7 +5,7 @@ categories: svn
 ---
 #### 本篇记录基于SubversionEdge搭建和配置SVN服务。
 <br />
-所用软件和版本如下，都已搜集到[这里](http://pan.baidu.com/s/1c0y9A6G)：
+所用软件和版本如下，都已搜集到[这里](http://pan.baidu.com/s/1c0y9A6G)供参考：
 >* CollabNetSubversionEdge-4.0.11_linux-x86_64.tar.gz
 >* CollabNetSubversionEdge-4.0.11_setup-x86_64.exe
 >* VisualSVN.v2.7.3.zip
@@ -120,6 +120,4 @@ Linux下的安装稍显麻烦，安装Java运行环境并配置环境变量，�
 	版本库父文件夹：http://ALIAS.domain.com:8080/svn/
 	浏览版本库：http://ALIAS.domain.com:8080/viewvc/
 
-以上。
-
-您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
+以上，您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。

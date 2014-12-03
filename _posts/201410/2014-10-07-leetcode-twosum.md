@@ -37,6 +37,4 @@ public static int[] twoSum(final int[] input, final long target) {
 总结，我们能学到什么：
 >* 简化需求以方便写代码实现，本例中变换表达式的形式后(如：2=11-9)，就可以方便使用hashmap了
 
-就酱，嗯。
-
-您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
+以上，您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。

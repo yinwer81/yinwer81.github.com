@@ -58,6 +58,4 @@ In the WAITING state, a thread is waiting for a signal from another thread. This
 
 还可以参考网文[Synchronizing Threads with Java Monitors](http://www.csc.villanova.edu/~mdamian/threads/javamonitors.html)学习。
 
-就酱，嗯。
-
-您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
+就酱，您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
