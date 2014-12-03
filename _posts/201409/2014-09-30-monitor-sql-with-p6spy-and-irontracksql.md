@@ -29,12 +29,11 @@ categories: programming
 {% endhighlight %}
 
 spy.properties中关于irontracksql的配置如下：
-{% highlight properties %}
-#uncomment these two lines if you want to use irongrid - start
-module.ibeam=com.irongrid.ibeam.server.IBeamFactory
-monitorport=2000
-#uncomment these two lines if you want to use irongrid - end
-{% endhighlight %}
+
+	# uncomment these two lines if you want to use irongrid - start
+	module.ibeam=com.irongrid.ibeam.server.IBeamFactory
+	monitorport=2000
+	# uncomment these two lines if you want to use irongrid - end
 
 irontracksql运行环境已经放到在[这里](https://github.com/yinwer81/s3h3p6spy)，在任意位置运行以下命令启动irontracksql监控sql执行情况：
 {% highlight java %}
@@ -47,6 +46,4 @@ irontracksql运行界面如下图，默认输出PreparedStatement语句，可在
 
 ![示例](/images/IronTrackSQL.png)
 
-就酱，嗯。
-
-您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
+以上，您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。

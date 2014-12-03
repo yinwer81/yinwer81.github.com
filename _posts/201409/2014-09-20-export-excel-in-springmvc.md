@@ -28,9 +28,8 @@ public View export() {
 
             List<Points> listOfPoints = pointsService.findAllPoints();
             HSSFRow row = null;
-            int idx = 0;
             for (Points p : listOfPoints) {
-                idx = 0;
+                int idx = 0;
                 row = sheet.createRow(rownum++);
                 row.createCell(idx++).setCellValue(p.getName());
                 row.createCell(idx++).setCellValue(p.getPoints());
@@ -46,8 +45,6 @@ public View export() {
 
 {% endhighlight %}
 
-Spring 3.2.6.RELEASE和POI 3.9环境测试通过，中文文件名在各浏览器下的兼容问题不在此文范围。
-
-就酱，嗯。
+以上，Spring 3.2.6.RELEASE和POI 3.9环境测试通过，中文文件名在各浏览器下的兼容问题不在此文范围。
 
 您有任何问题或建议, 请给我写[邮件](mailto:yinwer81@gmail.com)。

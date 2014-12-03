@@ -57,8 +57,6 @@ function lunchRdp(ip, port, host, user, pass) {
 };
 {% endhighlight %}
 
-IE8测试通过。
-
-就酱，嗯。
+以上，IE8测试通过。
 
 您有任何问题或建议, 请给我写[邮件](mailto:yinwer81@gmail.com)。
