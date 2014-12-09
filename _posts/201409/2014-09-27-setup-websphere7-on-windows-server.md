@@ -35,6 +35,8 @@ categories: websphere
 
 登陆集成方案控制台，验证Websphere Application Server套件版本：7.0.0.27
 
+从[ftp.boulder.ibm.com这里](ftp://ftp.boulder.ibm.com/software/websphere/appserv/support/fixpacks)可下载一些patch补丁，可能需要备梯。
+
 本篇就酱，后面将再陆续记录一些Websphere的应用实践。
 
 您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
