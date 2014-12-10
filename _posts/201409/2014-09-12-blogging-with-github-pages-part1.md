@@ -5,7 +5,7 @@ categories: github-pages
 ---
 #### 本篇记录在Windows7 64bits环境下连接Github，Clone和提交Github-Pages博客仓库。
 <br />
-以下所用软件及版本如下，都已搜集到[度盘这里](http://pan.baidu.com/s/1o6Nrahc)供参考：
+以下所用软件及版本如下，都已搜集到[度盘](http://pan.baidu.com/s/1o6Nrahc)共享，供各位参考：
 >* msysGit-fullinstall-1.8.1.2-preview20130201.exe
 >* rubyinstaller-2.0.0-p576-x64.exe
 >* python-2.7.3.msi

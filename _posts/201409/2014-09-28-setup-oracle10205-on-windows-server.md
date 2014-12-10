@@ -5,7 +5,7 @@ categories: Oracle
 ---
 #### 本篇记录在Windows2008R2 64bits环境中安装和配置Oracle10205过程，以及一些注意事项。
 <br />
-所用软件和版本如下，都已搜集到[度盘这里](http://pan.baidu.com/s/1kTMHAOv)供参考：
+所用软件和版本如下，都已搜集到[度盘](http://pan.baidu.com/s/1kTMHAOv)共享，供各位参考：
 >* 10204_vista_w2k8_x64_production_db.zip 《Oracle10204安装包》
 >* p8202632_10205_MSWIN-x86-64.zip 《Oracle10205安装包》
 >* p8350262_10205_Generic.zip 《EM证书过期补丁》
