@@ -4,26 +4,44 @@ title: "I am a programmer!"
 categories: programming
 ---
 Talk is cheap, show me the code.
-{% highlight java %}
-package com.dunkcoder;
 
-/**
- * I am a programmer!
- *
- * @author Yinwer@Dunkcoder
- */
-public class IAmAProgrammer {
-
-    public static void main(String args[]) {
-
-        System.out.println("I am a programmer!");
-
-    }
-
-}
-
+{% highlight basic %}
+' in VisualBasic / office macro
+Dim slogan
+slogan = "I am a programmer!"
+MsgBox slogan
+Debug.Print slogan
+Console.WriteLine slogan
 {% endhighlight %}
 
-就酱，么么哒。。。
+{% highlight Java %}
+// in Java
+String slogan = "I am a programmer!";
+System.out.println(slogan);
+{% endhighlight %}
 
-您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
+{% highlight Scala %}
+// in Scala
+val slogan: String = "I am a programmer!"
+println(slogan);
+{% endhighlight %}
+
+{% highlight JavaScript %}
+// in JavaScript
+var slogan = "I am a programmer!";
+console.debug(slogan);
+{% endhighlight %}
+
+{% highlight python %}
+# in Python
+>>> slogan = "I am a programmer!"
+>>> print(slogan)
+{% endhighlight %}
+
+{% highlight go %}
+// in go
+var slogan string = "I am a programmer!"
+fmt.Println(slogan)
+{% endhighlight %}
+
+就酱了，么么哒。。。
