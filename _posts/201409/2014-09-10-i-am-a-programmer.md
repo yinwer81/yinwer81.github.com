@@ -5,15 +5,6 @@ categories: programming
 ---
 Talk is cheap, show me the code.
 
-{% highlight basic %}
-' in VisualBasic / office macro
-Dim slogan
-slogan = "I am a programmer!"
-MsgBox slogan
-Debug.Print slogan
-Console.WriteLine slogan
-{% endhighlight %}
-
 {% highlight Java %}
 // in Java
 String slogan = "I am a programmer!";
