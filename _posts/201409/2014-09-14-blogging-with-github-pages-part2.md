@@ -72,7 +72,7 @@ categories: github-pages
         Server address: http://0.0.0.0:4000/
       Server running... press ctrl-c to stop.
 
-Windows7 64bits环境使用git-credential-winstore记住密码，操作步骤及注意事项如下：
+Windows7 64bits环境使用git-credential-winstore (msysgit中可能自带)记住密码，操作步骤及注意事项如下：
 
 1. 将git-credential-winstore.exe放在与git.exe相同位置。
 2. 切换到命令行，执行`git-credential-winstore -i git.exe`，在弹出框中点Yes安装。

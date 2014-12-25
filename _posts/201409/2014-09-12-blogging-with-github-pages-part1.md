@@ -5,7 +5,7 @@ categories: github-pages
 ---
 #### 本篇记录在Windows7 64bits环境下连接Github，Clone和提交Github-Pages博客仓库。
 <br />
-以下所用软件及版本如下，都已搜集到[度盘](http://pan.baidu.com/s/1o6Nrahc)共享，供各位参考：
+以下所用软件及版本如下，都已搜集到[度盘这里](http://pan.baidu.com/s/1o6Nrahc)共享，供各位参考：
 >* msysGit-fullinstall-1.8.1.2-preview20130201.exe
 >* rubyinstaller-2.0.0-p576-x64.exe
 >* python-2.7.3.msi
@@ -33,7 +33,7 @@ Clone喜欢的博客模板到本地（我对前端不擅长，且非常喜欢这
 
 几分钟后浏览http://yinwer81.github.com即可。
 
-**若不成功，邮件或者仓库的Setting页面（右边Setting链接）Github Pages段落会提示失败，注意是否有CNAME设置。**
+**若失败，邮件或仓库的Setting页面（右边Setting链接）Github Pages段落有提示信息，同时需注意是否有CNAME设置。**
 
 如何在本地调试预览github pages，请参考下篇[blogging with github pages part2](/20140914/blogging-with-github-pages-part2/)
 

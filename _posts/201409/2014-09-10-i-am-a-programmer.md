@@ -13,14 +13,14 @@ System.out.println(slogan);
 
 {% highlight Scala %}
 // in Scala
-val slogan: String = "I am a programmer!"
-println(slogan);
+val slogan : String = "I am a programmer!"
+println(slogan)
 {% endhighlight %}
 
-{% highlight JavaScript %}
-// in JavaScript
+{% highlight Node.js %}
+// in Node.js
 var slogan = "I am a programmer!";
-console.debug(slogan);
+console.log(slogan);
 {% endhighlight %}
 
 {% highlight python %}
