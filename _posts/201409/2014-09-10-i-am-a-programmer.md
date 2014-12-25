@@ -17,7 +17,7 @@ val slogan : String = "I am a programmer!"
 println(slogan)
 {% endhighlight %}
 
-{% highlight Node.js %}
+{% highlight javascript %}
 // in Node.js
 var slogan = "I am a programmer!";
 console.log(slogan);
