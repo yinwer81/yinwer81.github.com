@@ -25,8 +25,8 @@ console.log(slogan);
 
 {% highlight python %}
 # in Python
->>> slogan = "I am a programmer!"
->>> print(slogan)
+slogan = "I am a programmer!"
+print(slogan)
 {% endhighlight %}
 
 {% highlight go %}
