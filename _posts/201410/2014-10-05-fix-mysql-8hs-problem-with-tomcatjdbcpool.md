@@ -11,7 +11,7 @@ categories: programming
     org.hibernate.SessionException: Session is closed!
     Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure ...
 
-祭出谷歌大神一搜索才知道是mysql的8小时问题，官方说明在[这里](http://dev.mysql.com/doc/refman/5.0/en/server-system-variables.html#sysvar_wait_timeout)，大致意思是：mysql在默认配置下（28800秒）会主动断开闲置的连接。
+祭出谷歌大神一搜索才知道是mysql的8小时问题，[这里](http://dev.mysql.com/doc/refman/5.0/en/server-system-variables.html#sysvar_wait_timeout)是官方说法，大致意思是：mysql在默认28800秒会主动断开闲置的连接。
 
 找到了RootCause，问题很好解决：加一个类似心跳机制即可，在28800秒问题发生之前，定时和mysql心跳一下，剩下的事就是查Tomcat JdbcPool的文档了。
 
