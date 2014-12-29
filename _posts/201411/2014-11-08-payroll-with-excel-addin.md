@@ -24,13 +24,11 @@ Payroll程序非常简单，一个EXCEL的Payroll模板(Payroll.xlsx)和一个EX
 如图所示，Payslip(EXCEL附件)命名采取`yyyy-m-d - xxx.xlsx`格式，xxx为随机数字，使用EXCEL加密。
 ![示例](/images/PayrollAttachment.png)
 
-Features to be enhanced：<br/>
+以下需求点尚未实现，具体时间计划没有：<br/>
 1. 以HTML格式发送邮件<br/>
 2. 检查邮箱有效性<br/>
 3. 标记发送失败邮件
 
 公司内部正式运营6个月没有问题。代码比较乱，就不公开了，感兴趣的可以与我联系索取。
 
-就酱，嗯。
-
-您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
+就酱，您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。

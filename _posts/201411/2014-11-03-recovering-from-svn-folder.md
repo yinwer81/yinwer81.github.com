@@ -25,8 +25,6 @@ Windows7 64bits环境，有两种方法：
 
 	for /f "tokens=* delims=" %%i in ('dir /s /b /a:d *.svn') do (rd /s /q "%%i")
 
-两种方法均测试可用。
-
-就酱，嗯。
+以上，两种方法均测试可用。
 
 您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。

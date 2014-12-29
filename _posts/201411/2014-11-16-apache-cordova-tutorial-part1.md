@@ -11,7 +11,7 @@ categories: Cordova
 >* 处理和优化TouchEvents, Scrolling, Styling和PageTransitions等Mobile特性
 >* 使用Single-Page Architecture和HTML templates构建应用
 
-本篇记录在Windows7 64bits环境中怎样使用CLI(Command Line Interface)创建编译打包Cordova(Android)项目，iOS环境另篇再讲。
+本篇记录在Windows7 64bits环境中怎样使用CLI(Command Line Interface)创建编译打包Cordova(Android)和iOS项目。
 
 #### 安装配置nodeJS和npm环境
 <br/>
@@ -72,7 +72,7 @@ Timeout后修改`<npm文件夹>/node_modules/cordova-lib/src/cordova/platforms.j
 	# 添加Android平台支持
 	$ cordova platforms add android
 
-	# 添加iOS平台支持
+	# MAC上添加iOS平台支持
 	$ cordova platforms add ios
 解决办法：SDK Manager中安装Android 4.4.2(API 19)即可，菜单：Tools->Options中可以设置代理。
 
@@ -92,7 +92,7 @@ Timeout后修改`<npm文件夹>/node_modules/cordova-lib/src/cordova/platforms.j
 	# 编译android
 	$ cordova build android
 
-	# 编译ios
+	# MAC上编译ios
 	$ sudo cordova build ios
 
 	# ios项目将编译到HelloCordova/platforms/ios目录，双击HelloCordova.xcodeproj在Xcode中打开项目并将项目运行在iOS模拟器，
@@ -124,6 +124,4 @@ Timeout后修改`<npm文件夹>/node_modules/cordova-lib/src/cordova/platforms.j
 
 ![示例](/images/CordovaTutorial.png)
 
-就酱，嗯。
-
-您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
+就酱，您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。

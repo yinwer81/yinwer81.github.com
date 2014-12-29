@@ -6,7 +6,7 @@ categories: programming
 
 维护项目SCM，系统集成测试时发现有数据库连接泄露发生，历史故事/客观原因等也就不说了，代码量较大，不想也无法通过CodeReview进行排查，导入代码发现用的是C3P0，经查C3P0官方文档：有戏！
 
-目前C3P0代码放在Github[这里](https://github.com/swaldman/c3p0)，最新版本：`c3p0-0.9.2.1`。
+C3P0项目托管代码放在Github[这里](https://github.com/swaldman/c3p0)，目前最新版本：`c3p0-0.9.2.1`。
 
 文档在`Configuring to Debug and Workaround Broken Client Applications`位置，提到了两个参数可以简单粗暴的快速定位到具体位置。
 >* debugUnreturnedConnectionStackTraces
@@ -35,6 +35,4 @@ categories: programming
 {% endhighlight %}
 很容易从堆栈信息定位到具体位置：没有CodeReview，DAO使用不规范导致，继承了HibernateDaoSupport，通过getHibernateTemplate().getSessionFactory().openSession()获得session，session.createSQLQuery()后**没有session.close()**
 
-就酱，嗯。
-
-您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
+就酱，您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。

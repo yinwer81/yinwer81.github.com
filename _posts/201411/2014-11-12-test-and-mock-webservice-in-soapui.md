@@ -36,6 +36,4 @@ ServiceProvider提供REST方式的Url后，右键点Projects -> New REST Project
 
 写到这里时发现一个很好的资源pdf文档[接口测试工具SoapUI](/downloads/接口测试工具SoapUI.pdf)，转在这里供各位下载，版权归原作者所有。
 
-就酱，嗯。
-
-您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
+就酱，您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。

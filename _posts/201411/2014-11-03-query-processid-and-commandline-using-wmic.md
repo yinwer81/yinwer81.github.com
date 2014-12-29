@@ -4,7 +4,7 @@ title: "Query processId and commandLine using WMIC"
 categories: programming
 ---
 
- Windows7 64bits环境，使用WMIC查询ProcessId和CommandLine。
+ Windows7环境使用WMIC查询ProcessId和CommandLine。
 
 以记事本(notepad.exe)为例如下：
 

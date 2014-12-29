@@ -6,7 +6,7 @@ categories: Cordova
 
 前面已经在Windows7 64bits系统中将Android环境搭建好，并把HelloCordova项目运行起来了，在接下来的几篇中，创建并丰富`Employee Directory`项目。
 
-创建`XXX Employee Directory`项目可参考前篇[apache cordova tutorial part1](/20141116/apache-cordova-tutorial-part1/)，略去不表。
+创建`Employee Directory`项目可参考前篇[apache cordova tutorial part1](/20141116/apache-cordova-tutorial-part1/)，略去不表。
 
 在项目代码中，使用Json, LocalStorage, Memory和Websql共4中方式进行数据存取，修改`index.html`文件，引入下面不同的JavaScript文件，分别进行测试。
 	
@@ -199,6 +199,4 @@ $('.help-btn').on('click', function() {
 	StatusBar.styleDefault();
 重新编译并在iOS模拟器上测试，嗯，没问题了，如右上图示。
 
-就酱，嗯。
-
-您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
+就酱，您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
