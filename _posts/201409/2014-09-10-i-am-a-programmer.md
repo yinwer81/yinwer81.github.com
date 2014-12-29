@@ -31,7 +31,7 @@ print(slogan)
 
 {% highlight go %}
 // in go
-var slogan string = "I am a programmer!"
+slogan := "I am a programmer!"
 fmt.Println(slogan)
 {% endhighlight %}
 
