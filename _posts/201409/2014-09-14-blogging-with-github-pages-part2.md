@@ -17,7 +17,7 @@ categories: github-pages
 
     ruby dk.rb install
     
-    # 将原Gem源拿掉
+    # 将原rubygems源拿掉
     gem sources -l 
     gem sources --remove http://rubygems.org/
     # 换成taobao的Gem源镜像

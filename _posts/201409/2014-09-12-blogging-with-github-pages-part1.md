@@ -14,7 +14,7 @@ categories: github-pages
 
 #### 下面以本博客为例说明：
 <br />
-注册Github帐号：yinwer81，创建仓库`yinwer81.github.com`，必须为全称，下载并安装msysgit到`C:\msysgit`，克隆空库后设置`user.name`和`user.email`信息，参考如下命令：
+注册Github帐号：yinwer81，创建`yinwer81.github.com`仓库(仓库名必须是账号后面加上github.com后缀，全称)，下载并安装msysgit到`C:\msysgit`，克隆空库后设置非全局的`user.name`和`user.email`信息，参考如下命令：
 
 	$ git clone https://github.com/yinwer81/yinwer81.github.com.git
 	$ cd yinwer81.github.com/
@@ -25,7 +25,7 @@ Clone喜欢的博客模板到本地（我对前端不擅长，且非常喜欢这
 
 	$ git clone https://github.com/dashjim/dashjim.github.com.git
 
-拷贝dashjim.github.com文件夹中所有内容(.git目录除外)到yinwer81.github.com文件夹中，删除Jim的原有博文并把相关配置信息改掉，然后提交到github：
+拷贝dashjim.github.com文件夹中所有内容(.git目录除外)到yinwer81.github.com文件夹中，删除Jim的原有博文并修改相关配置信息，然后提交到github：
 
 	$ git add .
 	$ git commit -m "initial commit"

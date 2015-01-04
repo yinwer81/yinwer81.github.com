@@ -30,7 +30,7 @@ print(slogan)
 {% endhighlight %}
 
 {% highlight go %}
-// in go
+// in Go
 slogan := "I am a programmer!"
 fmt.Println(slogan)
 {% endhighlight %}

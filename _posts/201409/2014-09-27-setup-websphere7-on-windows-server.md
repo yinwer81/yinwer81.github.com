@@ -5,7 +5,7 @@ categories: websphere
 ---
 #### 本篇记录在Windows2008R2 64bits环境中安装配置Websphere ND7和patch补丁。
 <br />
-所用软件版本如下，都已搜集到[度盘](http://pan.baidu.com/s/1hqsv5xM)共享，供各位参考：
+所用软件版本如下，都已搜集到[度盘这里](http://pan.baidu.com/s/1hqsv5xM)共享，供各位参考：
 >* C1G2JML.zip，《Webshere ND7安装包》
 >* 7.0.0.27-WS-UPDI-WinAMD64.zip，《UpdateInstaller打补丁程序》
 >* 7.0.0-WS-WAS-WinX64-FP0000027.pak，《WAS 27号补丁》
@@ -35,7 +35,7 @@ categories: websphere
 
 登陆集成方案控制台，验证Websphere Application Server套件版本：7.0.0.27
 
-从[ftp.boulder.ibm.com](ftp://ftp.boulder.ibm.com/software/websphere/appserv/support/fixpacks)可下载一些patch补丁，可能需要梯子。
+从[ftp.boulder.ibm.com](ftp://ftp.boulder.ibm.com/software/websphere/appserv/support/fixpacks)可找到相关patch补丁，可能需要梯子。
 
 本篇就酱，后面将再陆续记录一些Websphere的应用实践。
 
