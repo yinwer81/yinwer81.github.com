@@ -19,7 +19,7 @@ categories: redmine
 
 #### 下面记录几个配置实践：
 <br />
-可以使用mysql客户端工具连接bitnami_redmine数据库：账号root，密码为redmine登陆密码。
+可以使用mysql客户端工具连接bitnami_redmine数据库：账号root，密码为redmine登陆密码，同时该账号密码也会记录在database.yml中。
 
 配置发送邮件功能SMTP，适当修改文件configuration.yml以下内容：
 

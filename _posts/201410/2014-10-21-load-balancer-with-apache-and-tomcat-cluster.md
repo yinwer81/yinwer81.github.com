@@ -117,6 +117,4 @@ categories: programming
 
 本文参考[Tomcat Clustering系列5篇](http://www.ramkitech.com/2012/10/tomcat-clustering-series-simple-load.html)进行测试和实践，有梯子的最好看原版。
 
-就酱，嗯。
-
-您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
+就酱，您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
