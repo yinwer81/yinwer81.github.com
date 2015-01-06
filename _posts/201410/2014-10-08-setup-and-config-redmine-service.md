@@ -6,9 +6,9 @@ categories: redmine
 
 #### 本篇记录在Ubuntu 64bits环境下搭建和配置Redmine。
 <br />
-所用软件和版本如下，都已搜集到[这里](http://pan.baidu.com/s/1gdzPxwJ)供参考：
->* bitnami-redmine-2.3.0-2-linux-installer.run
->* bitnami-redmine-2.3.0-2-windows-installer.exe
+所用软件和版本如下，都已搜集到[度盘这里](http://pan.baidu.com/s/1gdzPxwJ)供参考：
+>* bitnami-redmine-2.6.0-3-linux-x64-installer.run
+>* bitnami-redmine-2.6.0-3-windows-installer.exe
 
 首先，Redmine版本1.x和2.x区别，可以参考[Redmine News](http://www.redmine.org/news/66)：
 >* Redmine 1.x分支基于Rails2.3版本开发
@@ -41,32 +41,32 @@ categories: redmine
 
 配置使用HTTPS协议的SVN版本库
 
->* Windows2008R2环境成功例(假定Redmine安装在C:\redmine-2.3.0-2目录)
+>* Windows2008R2环境成功例(假定Redmine安装在C:\redmine-2.6.0-3目录)
 
     切换到REDMINE安装目录，执行命令(https svn中的test仓库)：
 
-	cd  C:\redmine-2.3.0-2\subversion\bin\
+	cd  C:\redmine-2.6.0-3\subversion\bin\
 	svn ls --config-option config:auth:store-auth-creds=yes --config-dir ssldir https://IP/svn/test
 
 	修改subversion_adapter.rb中credentials_string方法第四行为：
-	str << " --no-auth-cache --non-interactive --config-dir C:\\redmine-2.3.0-2\\subversion\\bin\\ssldir"
+	str << " --no-auth-cache --non-interactive --config-dir C:\\redmine-2.6.0-3\\subversion\\bin\\ssldir"
 
     重启Redmine
 
->* Ubuntu 64bits环境成功例(假定Redmine安装在/opt/redmine-2.3.0-2目录)
+>* Ubuntu 64bits环境成功例(假定Redmine安装在/opt/redmine-2.6.0-3目录)
 
     切换到REDMINE安装目录，执行命令(https svn中的test仓库)：
 
-	cd /opt/redmine-2.3.0-2/subversion/bin
+	cd /opt/redmine-2.6.0-3/subversion/bin
     svn ls --config-option config:auth:store-auth-creds=yes --config-dir ssldir https://IP/svn/test
 
     <使apache所在用户和组成为ssldir目录owner>
 	ps -ef | grep apache
 	ls -al
-	sudo chown -R daemon.daemon /opt/redmine-2.3.0-2/subversion/bin/ssldir/
+	sudo chown -R daemon.daemon /opt/redmine-2.6.0-3/subversion/bin/ssldir/
 
     修改subversion_adapter.rb中credentials_string方法第四行为：
-	str << " --no-auth-cache --non-interactive --config-dir /opt/redmine-2.3.0-2/subversion/bin/ssldir"
+	str << " --no-auth-cache --non-interactive --config-dir /opt/redmine-2.6.0-3/subversion/bin/ssldir"
 
     重启Redmine
 
@@ -77,7 +77,7 @@ categories: redmine
 >* Redmine目前仅支持通过文件系统存取本机git仓库，故只能创建计划任务定期获取git仓库最新内容：
 
     #添加git到PATH环境变量
-	PATH=/opt/redmine-2.3.0-2/git/bin:$PATH
+	PATH=/opt/redmine-2.6.0-3/git/bin:$PATH
 	echo $PATH | grep git
 
     #拉取test项目仓库到本机路径：/gitRepos/test
@@ -101,6 +101,4 @@ categories: redmine
 
 后面将陆续记录一些Redmine及其插件应用实践。
 
-就酱，嗯。
-
-您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
+就酱，嗯。您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。

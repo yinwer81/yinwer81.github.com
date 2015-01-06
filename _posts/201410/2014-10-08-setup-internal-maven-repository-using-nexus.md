@@ -6,7 +6,7 @@ categories: maven
 
 #### 本篇记录在Windows2008R2 64bits环境下，使用Nexus搭建和配置Maven私服。
 <br />
-所用软件和版本如下，都已搜集到[这里](http://pan.baidu.com/s/1sjz5aW1)供参考：
+所用软件和版本如下，都已搜集到[度盘这里](http://pan.baidu.com/s/1sjz5aW1)供参考：
 >* apache-maven-3.2.3-bin.zip
 >* nexus-2.10.0-02-bundle.zip
 

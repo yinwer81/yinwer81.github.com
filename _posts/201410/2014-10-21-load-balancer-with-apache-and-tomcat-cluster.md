@@ -6,7 +6,7 @@ categories: programming
 
 #### 本篇记录在Windows 2008R2 64bits环境下，基于Apache+Tomcat搭建和配置简单集群。
 <br />
-所用软件和版本如下，都已搜集到[这里](http://pan.baidu.com/s/1o6kcmwE)：
+所用软件和版本如下，都已搜集到[度盘这里](http://pan.baidu.com/s/1o6kcmwE)：
 >* apache-tomcat-7.0.56-windows-x64.zip
 >* httpd-2.2.25-win32-x86-no_ssl.msi
 >* probe-2.3.3.zip

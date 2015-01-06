@@ -10,7 +10,7 @@ categories: programming
 
 WebService是无状态的，所以适用于较简单，数据交换小，即时调用的场景，而JCo则是通过在应用侧缓存SAP账号和密码（*.jcoDestination文件），保持和SAP的连接，适合于定时任务，大数据量交换和同步的场景。
 
-基于Windows7 64bits环境，所用软件和版本如下，都已搜集到[这里](http://pan.baidu.com/s/1o6kcmwE)供参考：
+基于Windows7 64bits环境，所用软件和版本如下，都已搜集到[度盘这里](http://pan.baidu.com/s/1o6kcmwE)供参考：
 >* forge-distribution-1.4.4.Final.zip
 >* plugin-hibersap-master.zip
 

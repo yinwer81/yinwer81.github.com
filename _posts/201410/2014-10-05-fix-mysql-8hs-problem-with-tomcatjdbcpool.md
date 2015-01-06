@@ -4,7 +4,7 @@ title: "Fix mysql 8hs problem with tomcatJdbcPool"
 categories: programming
 ---
 
-刚刚交付一个业务自助系统，运行环境是SpringMVC, JPA(Hibernate), MySql(Tomcat jdbcPool)。
+刚刚交付一个自助业务系统，运行环境是SpringMVC, JPA(Hibernate), MySql(Tomcat jdbcPool)。
 
 每天凌晨0点到早上9点是没人访问的，于是每天上班均收到通知：系统报错，不能登录。经查日志，系统报错大致如下：
 
