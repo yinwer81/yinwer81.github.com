@@ -8,7 +8,7 @@ categories: svn
 
 Windows7 64bits环境，有两种方法：
 
-第一种：拷贝以下注册表，另保存为`Delete_SVN.reg`(ANSI编码)，双击导入注册表。
+第一种：拷贝以下注册表，另保存为`deleteSVNs.reg`(ANSI编码)，双击导入注册表。
 
 	Windows Registry Editor Version 5.00
 
@@ -21,7 +21,7 @@ Windows7 64bits环境，有两种方法：
 
 在svn文件夹上点右键，选择Delete SVN Folders，将弹出命令行窗口递归删除`.svn`文件夹。
 
-第二种：将以下批处理命令包装成`Delete_SVN_Folders.bat`，拷贝`Delete_SVN_Folders.bat`到SVN仓库根目录，双击执行即可。
+第二种：将以下批处理命令包装成`deleteSVNs.bat`，拷贝`deleteSVNs.bat`到SVN仓库根目录，双击执行即可。
 
 	for /f "tokens=* delims=" %%i in ('dir /s /b /a:d *.svn') do (rd /s /q "%%i")
 

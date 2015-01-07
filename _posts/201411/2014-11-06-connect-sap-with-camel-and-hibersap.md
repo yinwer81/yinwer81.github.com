@@ -39,6 +39,4 @@ categories: programming
 [Apache Camel框架入门示例](http://blog.csdn.net/kkdelta/article/details/7231640)<br/>
 [Camel自定义组件示例](http://blog.csdn.net/xtayfjpk/article/details/39122349)
 
-就酱，嗯。
-
-您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
+就酱，您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
