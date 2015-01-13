@@ -60,6 +60,15 @@ Nexus的一些操作：
 
 验证Nexus私服代理是否成功：查看下载artifacts的地址是否来自镜像URL地址，如果是，则代理成功。
 
+手工Install 3rdParty：
+
+	mvn deploy:deploy-file -Dfile=test-app-1.0.0-sources.jar -Dclassifier=sources -DgroupId=com.test -DartifactId=test-app -Dversion=1.0.0 -Dpackaging=jar -Durl=http://IP:8081/nexus/content/repositories/thirdparty/
+
+	mvn deploy:deploy-file -Dfile=test-app-1.0.0-javadoc.jar -Dclassifier=javadoc -DgroupId=com.test -DartifactId=test-app -Dversion=1.0.0 -Dpackaging=jar -Durl=http://IP:8081/nexus/content/repositories/thirdparty/
+
+	mvn install:install-file -Dfile=path/to/test-app-1.0.0.jar -DgroupId=com.test -DartifactId=test-app -Dversion=1.0.0 -Dpackaging=jar
+
+
 生成maven java项目：
 
 	mvn archetype:create -DgroupId=com.test -DartifactId=test-app
