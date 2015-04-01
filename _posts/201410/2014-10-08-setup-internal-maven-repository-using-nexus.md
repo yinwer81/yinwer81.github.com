@@ -71,10 +71,10 @@ Nexus的一些操作：
 
 生成maven java项目：
 
-	mvn archetype:create -DgroupId=com.test -DartifactId=test-app
+	mvn archetype:generate -DgroupId=com.test -DartifactId=test-app -DinteractiveMode=false -DsocksProxyHost=192.168.0.116 -DsocksProxyPort=8080
 
 生成maven web项目：
 
-	mvn archetype:create -DgroupId=com.test -DartifactId=test-webapp -DarchetypeArtifactId=maven-archetype-webapp
+	mvn archetype:generate -DgroupId=com.test -DartifactId=test-webapp -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false -DsocksProxyHost=192.168.0.116 -DsocksProxyPort=8080
 
 就酱，您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
