@@ -55,6 +55,12 @@ Nexus的一些操作：
         <mirrorOf>*</mirrorOf>
         <url>http://IP:8081/nexus/content/groups/public/</url>
 	</mirror>
+	<mirror> 
+      	<id>ibiblio.org</id> 
+      	<name>ibiblio Mirror of http://repo1.maven.org/maven2/</name> 
+      	<url>http://mirrors.ibiblio.org/maven2/</url> 
+      	<mirrorOf>*</mirrorOf>
+  </mirror>
 </mirrors>
 {% endhighlight %}
 
@@ -66,15 +72,15 @@ Nexus的一些操作：
 
 	mvn deploy:deploy-file -Dfile=test-app-1.0.0-javadoc.jar -Dclassifier=javadoc -DgroupId=com.test -DartifactId=test-app -Dversion=1.0.0 -Dpackaging=jar -Durl=http://IP:8081/nexus/content/repositories/thirdparty/
 
-	mvn install:install-file -Dfile=path/to/test-app-1.0.0.jar -DgroupId=com.test -DartifactId=test-app -Dversion=1.0.0 -Dpackaging=jar
+	mvn install:install-file -Dfile=test-app-1.0.0.jar -DgroupId=com.test -DartifactId=test-app -Dversion=1.0.0 -Dpackaging=jar
 
 
 生成maven java项目：
 
-	mvn archetype:generate -DgroupId=com.test -DartifactId=test-app -DinteractiveMode=false -DsocksProxyHost=192.168.0.116 -DsocksProxyPort=8080
+	mvn archetype:generate -DgroupId=com.test -DartifactId=test-app -DinteractiveMode=false
 
 生成maven web项目：
 
-	mvn archetype:generate -DgroupId=com.test -DartifactId=test-webapp -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false -DsocksProxyHost=192.168.0.116 -DsocksProxyPort=8080
+	mvn archetype:generate -DgroupId=com.test -DartifactId=test-webapp -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
 
 就酱，您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
