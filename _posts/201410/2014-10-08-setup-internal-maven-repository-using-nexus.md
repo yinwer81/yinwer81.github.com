@@ -77,10 +77,10 @@ Nexus的一些操作：
 
 生成maven java项目：
 
-	mvn archetype:generate -DgroupId=com.test -DartifactId=test-app -DinteractiveMode=false
+	mvn archetype:generate -DgroupId=com.test -DartifactId=test-app -DinteractiveMode=false -DarchetypeCatalog=internal
 
 生成maven web项目：
 
-	mvn archetype:generate -DgroupId=com.test -DartifactId=test-webapp -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+	mvn archetype:generate -DgroupId=com.test -DartifactId=test-webapp -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false -DarchetypeCatalog=internal
 
 就酱，您有任何问题或建议，请给我写[邮件](mailto:yinwer81@gmail.com)。
